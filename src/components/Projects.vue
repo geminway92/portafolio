@@ -88,19 +88,30 @@ export default {
   text-align: center;
   border-radius: var(--border-radius); 
   background-color: var(--primary-color);
+<<<<<<< HEAD
   color: #fff; 
 }
 
 .button--primary {
   background-color: var(--primary-color);
+=======
+>>>>>>> 3b0743d889b32ec636101dc9f988afa01208d61a
   color: #fff;
 
 }
 
+<<<<<<< HEAD
 .button:hover {
+=======
+.button--primary-ghost {
+>>>>>>> 3b0743d889b32ec636101dc9f988afa01208d61a
   background-color: transparent;
   color: var(--primary-color);
   border: 1px solid var(--primary-color);
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 3b0743d889b32ec636101dc9f988afa01208d61a
 </style>
