@@ -85,13 +85,12 @@ export default {
 <style scoped>
 .card--experience {
   background-color: var(--bg-card-color);
-  width: 340px;
-  height: 410px;
+  width: 420px;
+  height: 400px;
   padding: 1em;
   border-radius: var(--border-radius); 
   transition: var(--transition);
-  margin: 0 0 1em 1em;
-
+  margin: 0 130px 1em 0;
 }
 
 .experience {
