@@ -130,7 +130,6 @@ export default {
     gap: 15px;
 }
 
-<<<<<<< HEAD
 .column-center {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -142,7 +141,5 @@ export default {
     transition: var(--transition);
 }
 
-=======
->>>>>>> 3b0743d889b32ec636101dc9f988afa01208d61a
 
 </style>
