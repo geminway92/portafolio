@@ -11,7 +11,6 @@
                 <a href="mailto:geminway@live.com"> geminway@live.com</a>  
                 <!-- TODO: comprobar si esta forma es correcta o tengo que usar un link -->
             </div>
-<<<<<<< HEAD
             <div class="github">
                 <i class="fab fa-github"></i>
                 <a href="https://github.com/geminway92" target="_blank"> GitHub</a>  
@@ -22,9 +21,6 @@
                 <a href="https://www.linkedin.com/in/gemart%C3%ADn" target="_blank"> Linkelind</a>  
                 <!-- TODO: comprobar si esta forma es correcta o tengo que usar un link -->
             </div>
-=======
-                
->>>>>>> 3b0743d889b32ec636101dc9f988afa01208d61a
             <div class="card-profile-description">
                 Apasionada de la programación, responsable, con
                 facilidad para trabajar en equipo y con ganas de
@@ -54,11 +50,7 @@ a{
     padding: 1em;
     border-radius: .3em;   
     transition: var(--transition);
-<<<<<<< HEAD
     margin: 0 0 1em 150px;
-=======
-    margin: 0 0 1em 1em;
->>>>>>> 3b0743d889b32ec636101dc9f988afa01208d61a
 }
 
 .card-profile-image-container {
@@ -85,11 +77,7 @@ a{
 .subtitle{
     font-size: .9rem;
 }
-<<<<<<< HEAD
 .email, .github, .linkedin {
-=======
-.email {
->>>>>>> 3b0743d889b32ec636101dc9f988afa01208d61a
     margin-bottom: 5px;
 }
 .card-profile-description {
