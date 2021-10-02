@@ -1,41 +1,39 @@
 <template>
-
             <div :class="[darkMode ? 'dark' : 'lightMode']"> 
                 <div class="toggle-color" 
                 :class="[colorBlue ? 'color-item--blue' : colorGreen ?  'color-item--green' : colorPurple ? 'color-item--purple': colorOrange ? 'color-item--orange' : '']"
                 >  
                     <div class="mode-color-container">
-
                     
                         <toggle :darkMode="darkMode" :textMode="textMode" @lightMode="lightMode"/>
                         <ToggleColor 
                         @changeColorBlue="changeColorBlue" 
                         @changeColorGreen="changeColorGreen" 
                         @changeColorPurple="changeColorPurple" 
-                        @changeColorOrange="changeColorOrange" 
+                        @changeColorOrange="changeColorOrange"
+                        @audioFocus="audioFocus"
                         :colorBlue="colorBlue" 
                         :colorGreen="colorGreen" 
                         :colorPurple="colorPurple" 
-                        :colorOrange="colorOrange" 
-                
+                        :colorOrange="colorOrange"                 
                     />
                     </div>
+                    
                     <div class="main">
                             <div class="header">
-                                <CardProfile />
+                                <CardProfile @audioFocus="audioFocus"/>
                                 <Skills />
                                 <CardExperience />
 
                             </div>
                             <div class="column-center">
                                 <Hobbies />
-                                <Projects />
+                                <Projects  @audioFocus="audioFocus"/>
                             </div>
                             
                     </div>   
                 </div>
             </div>
-
 </template>
 
 <script>
@@ -53,6 +51,7 @@ export default {
         Hobbies: defineAsyncComponent(() => import('../components/Hobbies.vue')),
     },
     
+
     data() {
         return {
             darkMode: true,
@@ -60,12 +59,16 @@ export default {
             colorBlue: false ,
             colorGreen: false,
             colorPurple: false,
-            colorOrange: false
-            
+            colorOrange: false,
+            srcFocusAudio: require('../assets/audios/audio-click.mp3'),
+            focusAudio: new Audio()
         }
+
     },
     methods: {
+        
         lightMode() {
+            this.audioFocus()
             if(this.darkMode) {
                 this.textMode = 'Dark Mode'
             } else {
@@ -76,8 +79,9 @@ export default {
         },
 
         changeColorBlue( ) {
+            this.audioFocus()
             this.colorBlue = true        
-            
+
             this.colorGreen = false
             this.colorPurple = false
             this.colorOrange = false
@@ -85,6 +89,7 @@ export default {
         },
 
         changeColorGreen( ) {
+            this.audioFocus()
             this.colorGreen = true
 
             this.colorBlue = false 
@@ -93,6 +98,7 @@ export default {
         },  
 
         changeColorPurple( ) {
+            this.audioFocus()
             this.colorPurple = true
             
             this.colorBlue = false 
@@ -101,17 +107,22 @@ export default {
         },
 
         changeColorOrange( ) {
+            this.audioFocus()
             this.colorOrange = true
             
             this.colorBlue = false 
             this.colorGreen = false
             this.colorPurple = false
             
-        }
+        },
 
+        audioFocus() {
+            this.focusAudio.src = this.srcFocusAudio
+            this.focusAudio.play()
+        },
         
-    }
-
+    },
+  
 
 }   
 </script>

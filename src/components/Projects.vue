@@ -19,8 +19,8 @@
         Se consumió la Api "PokéApi".
       </p>
         <div class="buttons">
-          <a href="https://gameboy-pokemon.netlify.app/" target="_blank" class="button button--primary">Demo</a>
-          <a href="https://github.com/geminway92/gamepokemon2" class="button button--primary-ghost" target="_blank">Code</a>
+          <a href="https://gameboy-pokemon.netlify.app/" target="_blank" class="button button--primary" @click="this.$emit('audioFocus')">Demo</a>
+          <a href="https://github.com/geminway92/gamepokemon2" class="button button--primary-ghost" target="_blank" @click="this.$emit('audioFocus')">Code</a>
 
         </div>
 

@@ -8,17 +8,17 @@
         <div class="card-profile-info">
             <div class="email">
                 <i class="fas fa-envelope icon" ></i>
-                <a href="mailto:geminway@live.com"> geminway@live.com</a>  
+                <a href="mailto:geminway@live.com" @click="this.$emit('audioFocus')"> geminway@live.com</a>  
                 <!-- TODO: comprobar si esta forma es correcta o tengo que usar un link -->
             </div>
             <div class="github">
                 <i class="fab fa-github"></i>
-                <a href="https://github.com/geminway92" target="_blank"> GitHub</a>  
+                <a href="https://github.com/geminway92" target="_blank" @click="this.$emit('audioFocus')"> GitHub</a>  
                 <!-- TODO: comprobar si esta forma es correcta o tengo que usar un link -->
             </div>
                 <div class="linkedin">
                 <i class="fab fa-linkedin-in"></i>
-                <a href="https://www.linkedin.com/in/gemart%C3%ADn" target="_blank"> Linkelind</a>  
+                <a href="https://www.linkedin.com/in/gemart%C3%ADn" target="_blank" @click="this.$emit('audioFocus')"> Linkelind</a>  
                 <!-- TODO: comprobar si esta forma es correcta o tengo que usar un link -->
             </div>
             <div class="card-profile-description">
