@@ -38,13 +38,13 @@ export default {
 <style scoped>
  .projects {
   display: flex;
-  width: 800px;
+  width: 820px;
   height: 300px;
   background-color: var(--bg-card-color);
   padding: 1em;
   border-radius: var(--border-radius);   
   transition: var(--transition);
-  margin: -80px 150px 0 0;
+  margin: -85px 190px 0 0;
   align-items: flex-start;
 }
 

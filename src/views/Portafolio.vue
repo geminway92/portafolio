@@ -114,13 +114,12 @@ export default {
 
 <style>
 
+
 .main {
     background-color: var(--bg-color);
     width: 100%;    
     transition: var(--transition);
     display: grid;
-    grid-template-columns: min-content;
-    grid-template-rows: min-content;
 }
 
 .header {

@@ -26,12 +26,12 @@ export default {
 .colors {
   position: relative;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   align-items: center;
   height: 20px;
   width: 100px;
   bottom: 40px;
-  left: 1350px;
+  left: 1250px;
 }
 
 .colors-item {
@@ -43,7 +43,6 @@ export default {
   margin-left: 4px;
   cursor: pointer;
 }
-
 
 </style>
 

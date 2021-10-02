@@ -90,7 +90,7 @@ export default {
   padding: 1em;
   border-radius: var(--border-radius); 
   transition: var(--transition);
-  margin: 0 130px 1em 0;
+  margin-right: 130px;
 }
 
 .experience {

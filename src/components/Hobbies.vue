@@ -39,7 +39,7 @@ export default {
     padding: 1em;
     border-radius: var(--border-radius);
     transition: var(--transition);
-    margin: 0 0 1em 150px;
+    margin: 0 0 1em 180px;
 
 }
 
