@@ -56,6 +56,8 @@ export default {
 .hobbie__title {
     font-size: 1em;
     margin-top: 14px;
+    color: var(--primary-color);
+
 }
 
 .hobbie__description {

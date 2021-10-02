@@ -50,6 +50,8 @@ export default {
 
 .project__title {
   font-size: 1em;
+  color: var(--primary-color);
+
 }
 
 .project__text {

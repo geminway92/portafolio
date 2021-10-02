@@ -1,21 +1,25 @@
 <template>
+
             <div :class="[darkMode ? 'dark' : 'lightMode']"> 
                 <div class="toggle-color" 
                 :class="[colorBlue ? 'color-item--blue' : colorGreen ?  'color-item--green' : colorPurple ? 'color-item--purple': colorOrange ? 'color-item--orange' : '']"
                 >  
-                    <toggle :darkMode="darkMode" :textMode="textMode" @lightMode="lightMode"/>
-                    <ToggleColor 
-                    @changeColorBlue="changeColorBlue" 
-                    @changeColorGreen="changeColorGreen" 
-                    @changeColorPurple="changeColorPurple" 
-                    @changeColorOrange="changeColorOrange" 
-                    :colorBlue="colorBlue" 
-                    :colorGreen="colorGreen" 
-                    :colorPurple="colorPurple" 
-                    :colorOrange="colorOrange" 
+                    <div class="mode-color-container">
+
+                    
+                        <toggle :darkMode="darkMode" :textMode="textMode" @lightMode="lightMode"/>
+                        <ToggleColor 
+                        @changeColorBlue="changeColorBlue" 
+                        @changeColorGreen="changeColorGreen" 
+                        @changeColorPurple="changeColorPurple" 
+                        @changeColorOrange="changeColorOrange" 
+                        :colorBlue="colorBlue" 
+                        :colorGreen="colorGreen" 
+                        :colorPurple="colorPurple" 
+                        :colorOrange="colorOrange" 
                 
                     />
-
+                    </div>
                     <div class="main">
                             <div class="header">
                                 <CardProfile />
@@ -51,7 +55,7 @@ export default {
     
     data() {
         return {
-            darkMode: false,
+            darkMode: true,
             textMode: 'Light Mode',
             colorBlue: false ,
             colorGreen: false,
@@ -72,7 +76,7 @@ export default {
         },
 
         changeColorBlue( ) {
-            this.colorBlue = !this.colorBlue        
+            this.colorBlue = true        
             
             this.colorGreen = false
             this.colorPurple = false
@@ -81,7 +85,7 @@ export default {
         },
 
         changeColorGreen( ) {
-            this.colorGreen = !this.colorGreen
+            this.colorGreen = true
 
             this.colorBlue = false 
             this.colorBlue = false
@@ -89,7 +93,7 @@ export default {
         },  
 
         changeColorPurple( ) {
-            this.colorPurple = !this.colorPurple
+            this.colorPurple = true
             
             this.colorBlue = false 
             this.colorGreen = false
@@ -97,7 +101,7 @@ export default {
         },
 
         changeColorOrange( ) {
-            this.colorOrange = !this.colorOrange
+            this.colorOrange = true
             
             this.colorBlue = false 
             this.colorGreen = false
@@ -114,6 +118,13 @@ export default {
 
 <style>
 
+.mode-color-container {
+    background-color: var(--bg-card-color);
+    width: 100%;
+    height: 60px;
+    margin-bottom: 15px;
+    transition: var(--transition);
+}
 
 .main {
     background-color: var(--bg-color);
