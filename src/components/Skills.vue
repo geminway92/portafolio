@@ -36,9 +36,9 @@
               </div>
             </div>
             <div class="skills_item">
-              <p class="skills_tech skills_tech--35">Axios</p>
+              <p class="skills_tech">Axios</p>
               <div class="skills_bar">
-                  <div class="skills_level"></div>
+                  <div class="skills_level skills_level--35"></div>
               </div>
             </div>
             <div class="skills_item">
@@ -50,9 +50,14 @@
             <div class="skills_item">
               <p class="skills_tech">Quasar</p>
               <div class="skills_bar">
-                  <div class="skills_level skills_level--30"></div>
+                  <div class="skills_level skills_level--25"></div>
               </div>
-              
+            </div>
+            <div class="skills_item">
+              <p class="skills_tech">i18n</p>
+              <div class="skills_bar">
+                  <div class="skills_level skills_level--25"></div>
+              </div>
             </div>
   </div>
 </template>
@@ -102,11 +107,18 @@ export default {
 .skills_level {
     position: absolute;
     left: 0;
-    transform: translateX(50%);
     transform-origin: left;
     background-color: var(--primary-color);
 }
 
+.skills_level--35 {
+    transform: translateX(65%);
+}
+
+
+.skills_level--25 {
+    transform: translateX(75%);
+}
 .skills_level--40 {
     transform: translateX(60%);
 }
@@ -115,9 +127,6 @@ export default {
     transform: translateX(50%);
 }
 
-.skills_level--25 {
-    transform: translateX(75%);
-}
 
 
 

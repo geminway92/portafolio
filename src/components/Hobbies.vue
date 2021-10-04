@@ -5,23 +5,22 @@
             <div class="hobbie__image-container">
                 <img src="../assets/images/photo-hobbie-cooking.jpg" alt="cooking" class="hobbie__image">
             </div>
-            <h2 class="hobbie__title">Cocinar</h2>
-            <p class="hobbie__description">Me gusta cocinar todo tipo de platos, pero mi debilidad son los platos salados.</p>
+            <h2 class="hobbie__title">{{ $t('Hobbies.title-cook')}}</h2>
+            <p class="hobbie__description">{{ $t('Hobbies.description-cook')}}</p>
         </div>
         <div class="hobbie">
             <div class="hobbie__image-container">
                 <img src="../assets/images/photo-hobbie-gaming.jpg" alt="cooking" class="hobbie__image">
             </div>
-            <h2 class="hobbie__title">Videojuegos</h2>
-            <p class="hobbie__description">Mi primer juego instalado en una PC fue The sims, desde ahí supe
-                que sería el principio de todo. </p>
+            <h2 class="hobbie__title">{{ $t('Hobbies.title-gaming')}}</h2>
+            <p class="hobbie__description">{{ $t('Hobbies.description-gaming')}}</p>
         </div>
         <div class="hobbie">
             <div class="hobbie__image-container">
                 <img src="../assets/images/photo-hobbie-cine.jpg" alt="cooking" class="hobbie__image">
             </div>
-            <h2 class="hobbie__title">Cine / Series</h2>
-            <p class="hobbie__description"> Consumidora de casi todos los sitios de servicio en Streaming.</p>
+            <h2 class="hobbie__title">{{ $t('Hobbies.title-film')}}</h2>
+            <p class="hobbie__description">{{ $t('Hobbies.description-film')}}</p>
         </div>
     </div>
 </template>

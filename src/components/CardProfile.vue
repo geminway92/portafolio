@@ -22,10 +22,7 @@
                 <!-- TODO: comprobar si esta forma es correcta o tengo que usar un link -->
             </div>
             <div class="card-profile-description">
-                Apasionada de la programación, responsable, con
-                facilidad para trabajar en equipo y con ganas de
-                aprendizaje constante .
-
+                {{ $t('CardProfile.description')}}
             </div>
         </div>
     </div>

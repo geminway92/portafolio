@@ -12,11 +12,7 @@
       </div>
       <h2 class="project__title">Pokemon Page</h2>
       <p class="project__text">
-        Proyecto que simula una consola portatil. El juego consiste en que se te muestra 
-        un Pokemon oculto y te dan cuatro opciones, tienes que averiguar cual Pokemon es. 
-        Una vez elegido el pokemon se te muestra la imagen. Empiezas con 3 vidas, si fallas 3 veces pierdes.
-        Si aciertas vas sumando juego, luego puedes añadir tu nombre en la lista de clasificación de puntos.
-        Se consumió la Api "PokéApi".
+        {{ $t('Projects.text-pokemonPage')}}
       </p>
         <div class="buttons">
           <a href="https://gameboy-pokemon.netlify.app/" target="_blank" class="button button--primary" @click="this.$emit('audioFocus')">Demo</a>

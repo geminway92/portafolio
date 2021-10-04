@@ -1,39 +1,44 @@
 <template>
-            <div :class="[darkMode ? 'dark' : 'lightMode']"> 
-                <div class="toggle-color" 
-                :class="[colorBlue ? 'color-item--blue' : colorGreen ?  'color-item--green' : colorPurple ? 'color-item--purple': colorOrange ? 'color-item--orange' : '']"
-                >  
-                    <div class="mode-color-container">
-                    
-                        <toggle :darkMode="darkMode" :textMode="textMode" @lightMode="lightMode"/>
-                        <ToggleColor 
-                        @changeColorBlue="changeColorBlue" 
-                        @changeColorGreen="changeColorGreen" 
-                        @changeColorPurple="changeColorPurple" 
-                        @changeColorOrange="changeColorOrange"
-                        @audioFocus="audioFocus"
-                        :colorBlue="colorBlue" 
-                        :colorGreen="colorGreen" 
-                        :colorPurple="colorPurple" 
-                        :colorOrange="colorOrange"                 
-                    />
+    <div :class="[darkMode ? 'dark' : 'lightMode']"> 
+        <div class="toggle-color" 
+        :class="[colorBlue ? 'color-item--blue' : colorGreen ?  'color-item--green' : colorPurple ? 'color-item--purple': colorOrange ? 'color-item--orange' : '']"
+        >  
+
+            <div class="mode-color-container">
+            
+                <toggle :darkMode="darkMode" :textMode="textMode" @lightMode="lightMode"/>
+                <Multilanguage
+                :titleLanguage="titleLanguage"
+                @audioFocus="audioFocus"
+                />
+                <ToggleColor 
+                @changeColorBlue="changeColorBlue" 
+                @changeColorGreen="changeColorGreen" 
+                @changeColorPurple="changeColorPurple" 
+                @changeColorOrange="changeColorOrange"
+                @audioFocus="audioFocus"
+                :colorBlue="colorBlue" 
+                :colorGreen="colorGreen" 
+                :colorPurple="colorPurple" 
+                :colorOrange="colorOrange"                 
+            />
+            </div>
+            
+            <div class="main">
+                    <div class="header">
+                        <CardProfile @audioFocus="audioFocus"/>
+                        <Skills />
+                        <CardExperience />
+
+                    </div>
+                    <div class="column-center">
+                        <Hobbies />
+                        <Projects  @audioFocus="audioFocus"/>
                     </div>
                     
-                    <div class="main">
-                            <div class="header">
-                                <CardProfile @audioFocus="audioFocus"/>
-                                <Skills />
-                                <CardExperience />
-
-                            </div>
-                            <div class="column-center">
-                                <Hobbies />
-                                <Projects  @audioFocus="audioFocus"/>
-                            </div>
-                            
-                    </div>   
-                </div>
-            </div>
+            </div>   
+        </div>
+    </div>
 </template>
 
 <script>
@@ -49,6 +54,7 @@ export default {
         Skills: defineAsyncComponent(() => import('../components/Skills.vue')),
         Projects: defineAsyncComponent(() => import('../components/Projects.vue')),
         Hobbies: defineAsyncComponent(() => import('../components/Hobbies.vue')),
+        Multilanguage: defineAsyncComponent(() => import('../components/Multilanguage.vue')),
     },
     
 
@@ -56,6 +62,7 @@ export default {
         return {
             darkMode: true,
             textMode: 'Light Mode',
+            titleLanguage: 'Inglés',
             colorBlue: false ,
             colorGreen: false,
             colorPurple: false,
@@ -130,10 +137,12 @@ export default {
 <style>
 
 .mode-color-container {
-    background-color: var(--bg-card-color);
+    display: flex;
     width: 100%;
     height: 60px;
+    justify-content: space-between;
     margin-bottom: 15px;
+    background-color: var(--bg-card-color);
     transition: var(--transition);
 }
 

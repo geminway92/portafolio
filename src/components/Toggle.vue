@@ -4,8 +4,8 @@
           class="fa toggle-toggle-icon"
           :class="[!darkMode ? ' fa-sun' : 'fa-moon' ]"
           >
+          <span class="toggle-theme-text">{{textMode}}</span>
           </i>
-          <p class="toggle-theme-text">{{textMode}}</p>
         </div>
 
 </template>
@@ -33,16 +33,28 @@ export default {
     display: flex;
     width: 140px;
     height: 60px;
-    margin-left: 100px;
     cursor: pointer;
+    position: relative;
+    left: 170px;
+}
+
+.toggle-toggle-icon:hover {
+  color: var(--primary-color);
+  
 }
 
 .toggle-toggle-icon {
     color: var(--text-color);
     margin: 22px 0 0 10px;
+    left: 100px;
+
 }
 
 .toggle-theme-text {
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+    color: var(--text-color);
     margin: 20px 0 0 10px
 }
 

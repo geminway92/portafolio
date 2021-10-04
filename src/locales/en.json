@@ -1,0 +1,28 @@
+{
+  "CardProfile": {
+    "description": "Passionate about programming, responsible, easy to work in a team and eager to learn constantly."
+  },
+
+  "Hobbies": {
+    "title-cook": "Cooking",
+    "title-gaming": "Gaming",
+    "title-film": "Film/Series",
+    "description-cook": "I like to cook all kinds of dishes, but my weakness is savory dishes.",
+    "description-gaming": "My first game installed on a PC was The sims, from there I knew it would be the beginning of everything.",
+    "description-film": "Consumer of almost all Streaming service sites."
+  },
+
+  "CardExperience": {
+    "date-jalon": "December 2016 - 2017",
+    "date-campana": "July 2019",
+    "date-txoco": "July - August 2019",
+    "job-jalon": "Cleaner",
+    "job-campana": "kitchen assistant",
+    "job-txoco": "kitchen assistant"
+    
+  },
+
+  "Projects": {
+    "text-pokemonPage": "Project that simulates a portable console. The game consists in that you are shown a hidden Pokemon and you are given four options, you have to find out which Pokemon it is. Once you choose the pokemon you are shown the image. You start with 3 lives, if you fail 3 times you lose. If you guess right you add game, then you can add your name in the points ranking list. The PokéApi is consumed."
+  }
+}

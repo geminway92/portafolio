@@ -24,14 +24,9 @@ export default {
 <style scoped>
 
 .colors {
-  position: relative;
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
   height: 20px;
   width: 100px;
-  bottom: 40px;
-  left: 1250px;
 }
 
 .colors-item {
@@ -41,6 +36,8 @@ export default {
   border: 1px solid var(--text-color );
   background-color: var(--primary-color);
   margin-left: 4px;
+  top: 18px;
+  right: 200px;
   cursor: pointer;
 }
 

@@ -10,17 +10,14 @@
             <div class="experience__info">
               <p
                 class="experience__time"
-                data-section="experience"
-                data-value="last-job-dates"
               > 
-                Dic 2016 - 2017 
+                {{ $t('CardExperience.date-jalon')}}
               </p>
               <h3
                 class="experience__job"
-                data-section="experience"
-                data-value="last-job-title"
               >
-                Limpiadora
+              {{ $t('CardExperience.job-jalon')}}
+
               </h3>
               
             </div>
@@ -34,17 +31,13 @@
             <div class="experience__info">
               <p
                 class="experience__time"
-                data-section="experience"
-                data-value="second-job-dates"
               >
-                Julio 2019
+                {{ $t('CardExperience.date-campana')}}
               </p>
               <h3
                 class="experience__job"
-                data-section="experience"
-                data-value="second-job-title"
               >
-                Pinche
+                {{ $t('CardExperience.job-campana')}}
               </h3>
               
             </div>
@@ -58,17 +51,13 @@
             <div class="experience__info">
               <p
                 class="experience__time"
-                data-section="experience"
-                data-value="first-job-dates"
               >
-                Julio - Agosto 2019
+                {{ $t('CardExperience.date-txoco')}}
               </p>
               <h3
                 class="experience__job"
-                data-section="experience"
-                data-value="first-job-title"
               >
-                Pinche
+                {{ $t('CardExperience.job-txoco')}}
               </h3>
               
             </div>
@@ -114,7 +103,7 @@ export default {
 
 .experience__time {
   font-size: .9rem;
-  margin: 0px 0px 10px 10px;
+  margin: 0px 0px 15px 10px;
 }
 
 .experience__job {
