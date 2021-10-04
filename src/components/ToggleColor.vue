@@ -37,7 +37,7 @@ export default {
   background-color: var(--primary-color);
   margin-left: 4px;
   top: 18px;
-  right: 200px;
+  left: 480px;
   cursor: pointer;
 }
 

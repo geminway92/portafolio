@@ -1,8 +1,12 @@
 <template>
-    <div class="button-languague" @click="this.$emit('audioFocus')">
-        <i class="fas fa-globe icon-languague">
-        <span class="title-languague">{{titleLanguage}}</span>
-        </i>
+    <div class="button-languague">
+            <i class="fas fa-globe icon-languague"></i>
+        <select @click="this.$emit('audioFocus')" v-model="$i18n.locale" class="select-languague">
+            <option v-for="locale in locales" :key="locale.key" :value="locale.key">
+                {{ locale.label }}
+            </option>
+        </select>
+
     </div>
 
 </template>
@@ -15,41 +19,45 @@ export default {
         type: String,
         default: 'Inglés',
     }
+  },
+  data() {
+      return {
+        locales: [
+            { key: "es", "label": "Español"},
+            { key: "en", "label": "Inglés"}
+        ]
+
+      }
+    
   }
+  
 }
 </script>
 
 <style scoped>
 
 .button-languague {
+    display: flex;
     font-size: 2em;
     position:relative;
+    width: 100px;
     height: min-content;
     background-color: var(--bg-card-color);
     transition: var(--transition);
-    top: 5px;
+    right: 30px;
+    top: 18px;
     cursor: pointer;
 }
 
-.button-languague:hover {
-  color: var(--primary-color);
-  
+.select-languague {
+  background: var(--bg-color);
+  color: var(--text-color);
 }
 
 .icon-languague{
     font-size: 0.6em;
-    
+    margin-right: 6px;    
 }
 
-.title-languague {
-    font-size: 16px;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: normal;
-    width: 100px;
-    height: 100px;
-    color: var(--text-color);
-    margin-left: 10px;
-    position: relative;
-    transition: var(--transition);
-}
+
 </style>

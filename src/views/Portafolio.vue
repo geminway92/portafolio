@@ -7,10 +7,6 @@
             <div class="mode-color-container">
             
                 <toggle :darkMode="darkMode" :textMode="textMode" @lightMode="lightMode"/>
-                <Multilanguage
-                :titleLanguage="titleLanguage"
-                @audioFocus="audioFocus"
-                />
                 <ToggleColor 
                 @changeColorBlue="changeColorBlue" 
                 @changeColorGreen="changeColorGreen" 
@@ -22,6 +18,10 @@
                 :colorPurple="colorPurple" 
                 :colorOrange="colorOrange"                 
             />
+                <Multilanguage
+                :titleLanguage="titleLanguage"
+                @audioFocus="audioFocus"
+                />
             </div>
             
             <div class="main">
@@ -127,9 +127,15 @@ export default {
             this.focusAudio.src = this.srcFocusAudio
             this.focusAudio.play()
         },
-        
-    },
+
+        changelanguague() {
+            const lang = this.$i18n.locale
+            console.log(lang )
+            
   
+        },
+
+    },
 
 }   
 </script>

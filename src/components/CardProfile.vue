@@ -44,6 +44,7 @@ a{
 .card-profile {
     background-color: var(--bg-card-color);
     width: 250px;
+    height: 490px;
     padding: 1em;
     border-radius: .3em;   
     transition: var(--transition);
