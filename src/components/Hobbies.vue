@@ -37,9 +37,7 @@ export default {
     width: 250px;
     padding: 1em;
     border-radius: var(--border-radius);
-    transition: var(--transition);
-    margin: 0 0 1em 180px;
-
+    transition: var(--transition);    
 }
 
 .title {

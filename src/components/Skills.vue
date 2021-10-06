@@ -71,9 +71,9 @@ export default {
 <style scoped>
 .skills {
     background-color: var(--bg-card-color);
-    width: 350px;
-    height: 400px;
-    padding: 1em;
+    width: 270px;
+    /* height: 400px; */
+    padding: 1em ;
     border-radius: var(--border-radius); 
     transition: var(--transition);
 

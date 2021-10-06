@@ -24,19 +24,18 @@
                 />
             </div>
             
-            <div class="main">
-                    <div class="header">
-                        <CardProfile @audioFocus="audioFocus"/>
-                        <Skills />
-                        <CardExperience />
+            <main class="main">
+                <section class="column column--left">
+                    <CardProfile @audioFocus="audioFocus"/>
+                    <Hobbies />
+                </section>
+                <section class="column column--right">
+                    <Skills />
+                    <CardExperience />
+                    <Projects  @audioFocus="audioFocus"/>                    
 
-                    </div>
-                    <div class="column-center">
-                        <Hobbies />
-                        <Projects  @audioFocus="audioFocus"/>
-                    </div>
-                    
-            </div>   
+            </section>
+            </main>   
         </div>
     </div>
 </template>
@@ -153,22 +152,41 @@ export default {
 }
 
 .main {
+    display: grid;
     background-color: var(--bg-color);
-    width: 100%;    
+    align-items: flex-start;
+    padding-bottom: 2em;
     transition: var(--transition);
-    display: grid;
+
 }
 
-.header {
-    display: grid;
-    grid-template-columns: min-content repeat(3, 1fr);
-    grid-template-rows: min-content;
-    gap: 15px;
+@media screen and (min-width: 720px) {
+    .main{
+        grid-template-columns:  min-content repeat(2, 1fr);
+        grid-template-columns: repeat(3, min-content);
+        justify-content: center;
+        gap: 0.6em;
+    }
 }
 
-.column-center {
+.column {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    gap: .5em;
+}
+
+@media screen and (min-width: 720px) {
+    
+    .column--left {
+        grid-template-columns: min-content;
+        grid-template-rows: min-content;
+        align-items: flex-start;
+    }
+
+    .column--right{
+        grid-template-columns:  305px 1fr;
+        align-items: flex-start;
+    }
+
 }
 
 .dark {

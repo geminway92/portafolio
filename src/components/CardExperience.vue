@@ -75,11 +75,9 @@ export default {
 .card--experience {
   background-color: var(--bg-card-color);
   width: 420px;
-  height: 400px;
-  padding: 1em;
+  padding: .9em;
   border-radius: var(--border-radius); 
   transition: var(--transition);
-  margin-right: 130px;
 }
 
 .experience {

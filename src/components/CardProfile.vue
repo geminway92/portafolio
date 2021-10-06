@@ -44,11 +44,10 @@ a{
 .card-profile {
     background-color: var(--bg-card-color);
     width: 250px;
-    height: 490px;
+    /* height: 490px; */
     padding: 1em;
     border-radius: .3em;   
     transition: var(--transition);
-    margin: 0 0 1em 180px;
 }
 
 .card-profile-image-container {
