@@ -76,11 +76,14 @@ export default {
     }
 }
 
-@media (min-width: 720px) {
+@media (min-width: 721px){
     .toggle {
-        left: 0;
+        width: 250px;
+        height: 100%;
+        top: 0em;
+        left: 0em;
     }
-
-
+    
 }
+
 </style>

@@ -143,7 +143,11 @@ export default {
 </script>
 
 <style>
+#app {
+        width: min-content;
+        height: min-content;
 
+}
 
 .mode-color-container {
     display: flex;
@@ -175,8 +179,15 @@ export default {
     background-color: var(--bg-color);
     transition: var(--transition);
 }
-@media (min-width: 720px) {
+@media (min-width: 721px) {
+
+
+    .mode-color-container {
+        width: 100%;
+    }
+
     .main{
+        margin: 2em;
         grid-template-columns:  min-content repeat(2, 1fr);
         grid-template-columns: repeat(3, min-content);
         justify-content: center;
@@ -199,12 +210,8 @@ export default {
 
 
 
-@media (max-width: 719px) {
-    #app {
-        width: min-content;
-        height: min-content;
-
-    }
+@media (max-width: 720px) {
+    
 
     .mode-color-container {
         height: min-content;
@@ -222,29 +229,9 @@ export default {
 
 }
 
-@media (min-width: 720px) {
-    
-    #app {
-        width: min-content;
-        height: min-content;
-
-    }
-
-   
-
-    .main {
-        grid-template-columns: min-content min-content;
-        grid-template-rows: min-content;
-        margin: 1em;
-    }
-}
-
-@media (min-width: 1260px) {
-    
-
-     .mode-color-container {
+@media (min-width: 1130px) {
+    .mode-color-container {
         width: 100vw;
     }
-
 }
 </style>

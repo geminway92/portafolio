@@ -35,62 +35,48 @@ export default {
 </script>
 
 <style scoped>
-
-.button-languague {
-    display: flex;
-    font-size: 2em;
-    position:relative;
-    width: 100px;
-    height: min-content;
-    background-color: var(--bg-card-color);
-    transition: var(--transition);
-    right: 30px;
-    top: 18px;
-    cursor: pointer;
-}
-
-.select-languague {
-  background: var(--bg-color);
-  color: var(--text-color);
-}
-
-.icon-languague{
-    font-size: 0.6em;
-    margin-right: 6px;    
-}
-
-@media (max-width: 719px) {
-
+@media (max-width: 720px) {
     .button-languague {
+        display: flex;
+        font-size: 2em;
+        position:relative;
         width: 220px;
-        
-    }
-
-    .icon-languague {
-        font-size: 1.2em;
-        margin-top: .1em;
+        height: min-content;
+        background-color: var(--bg-card-color);
+        transition: var(--transition);
+        right: 30px;
+        top: 1.2em;
+        cursor: pointer;
     }
     
-
     .select-languague {
         width: 220px;
         font-size: 1.2em;
         margin-left: 10px;
-    
+        background: var(--bg-color);
+        color: var(--text-color);
     }
+    
     .select-languague option {
         font-size: 0.3em;
     }
+    
 }
 
 
-@media (min-width: 1260px) {
+@media (min-width: 721px) {
+    .button-languague {
+        font-size: 2em;
+    }
     .select-languague {
         font-size: .5em;
     }
 
+    .icon-languague {
+        font-size: .6em;
+    }
     .select-languague option {
-        font-size: 1em;
+        font-size: .6em;
     }
 }
 </style>

@@ -67,7 +67,7 @@ export default {
     border-radius: var(--border-radius);
 }
 
-@media (max-width: 719px) {
+@media (max-width: 720px) {
  .card-hobbies {
      width: 95%;
      margin: auto;

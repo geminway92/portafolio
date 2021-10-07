@@ -47,7 +47,6 @@ export default {
     width: 300px;
     height: 100%;
     right: 50px;
-    top: 1em;
   }
 
   .colors-item {
@@ -59,32 +58,16 @@ export default {
   }
 }
 
-@media (min-width: 720px) {
-  .colors {
-    width: min-content;
-    height: min-content;
-    right: 25px;
-    position: relative;
-    top: 10px;
-  }
 
-  .colors-item {
-    width: 30px;
-    height: 30px;
-    left: 0em;
-    top: 0;
-    margin-left: 1em;  
-  }
-}
-
-@media (min-width: 1260px) {
+@media (min-width: 721px) {
   .colors {
-    top: 1.2em;
+    bottom: .9em;
   }
 
   .colors-item {
     width: 20px;
     height: 20px;
+    left: 1em;
   }
 }
 </style>

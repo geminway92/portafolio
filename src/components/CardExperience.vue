@@ -110,7 +110,7 @@ export default {
   color: var(--primary-color);
 }
 
-@media (max-width: 720px) {
+@media (max-width: 320px) {
  .card--experience {
    width: 95%;
    margin: auto;
