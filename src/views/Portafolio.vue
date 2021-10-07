@@ -175,7 +175,7 @@ export default {
     background-color: var(--bg-color);
     transition: var(--transition);
 }
-@media screen and (min-width: 720px) {
+@media (min-width: 720px) {
     .main{
         grid-template-columns:  min-content repeat(2, 1fr);
         grid-template-columns: repeat(3, min-content);
@@ -199,7 +199,7 @@ export default {
 
 
 
-@media screen and (max-width: 719px) {
+@media (max-width: 719px) {
     #app {
         width: min-content;
         height: min-content;
@@ -222,7 +222,7 @@ export default {
 
 }
 
-@media screen and (min-width: 720px) {
+@media (min-width: 720px) {
     
     #app {
         width: min-content;
@@ -239,7 +239,7 @@ export default {
     }
 }
 
-@media screen and (min-width: 1260px) {
+@media (min-width: 1260px) {
     
 
      .mode-color-container {

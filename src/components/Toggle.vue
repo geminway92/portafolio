@@ -58,7 +58,7 @@ export default {
     margin: 20px 0 0 10px
 }
 
-@media screen and (max-width: 719px){
+@media (max-width: 719px){
     .toggle {
         width: 250px;
         height: 100%;
@@ -76,7 +76,7 @@ export default {
     }
 }
 
-@media screen and (min-width: 720px) {
+@media (min-width: 720px) {
     .toggle {
         left: 0;
     }

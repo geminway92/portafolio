@@ -81,7 +81,7 @@ a{
     font-size: 0.9em;
 }
 
-@media screen and (max-width: 719px) {
+@media (max-width: 719px) {
  .card-profile {
      display: flex;
      width: 95%;

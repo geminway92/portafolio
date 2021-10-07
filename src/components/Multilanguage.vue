@@ -59,7 +59,7 @@ export default {
     margin-right: 6px;    
 }
 
-@media screen and (max-width: 719px) {
+@media (max-width: 719px) {
 
     .button-languague {
         width: 220px;
@@ -85,7 +85,7 @@ export default {
     }
 }
 
-@media screen and (min-width: 720px) {
+@media (min-width: 720px) {
 
     .button-languague {
         width: min-content;
@@ -99,7 +99,7 @@ export default {
     }
 }
 
-@media screen and (min-width: 1260px) {
+@media (min-width: 1260px) {
     .select-languague {
         font-size: .5em;
     }

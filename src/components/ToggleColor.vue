@@ -41,7 +41,7 @@ export default {
   cursor: pointer;
 }
 
-@media screen and (max-width: 719px) {
+@media (max-width: 719px) {
   .colors {
     position: relative;
     width: 300px;
@@ -59,7 +59,7 @@ export default {
   }
 }
 
-@media screen and (min-width: 720px) {
+@media (min-width: 720px) {
   .colors {
     width: min-content;
     height: min-content;
@@ -77,7 +77,7 @@ export default {
   }
 }
 
-@media screen and (min-width: 1260px) {
+@media (min-width: 1260px) {
   .colors {
     top: 1.2em;
   }

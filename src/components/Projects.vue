@@ -210,7 +210,7 @@ export default {
   border: 1px solid var(--primary-color);
 }
 
-@media screen and (max-width:719px) {
+@media (max-width:719px) {
 
   
   .projects__title-projects {
@@ -266,7 +266,7 @@ export default {
   }
 }
 
-@media screen and (min-width: 720px) {
+@media (min-width: 720px) {
   .projects-container {
     width: 760px;
   }
