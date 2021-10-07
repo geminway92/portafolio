@@ -1,47 +1,41 @@
 <template>
-    <div :class="[darkMode ? 'dark' : 'lightMode']"> 
-        <div class="toggle-color" 
-        :class="[colorBlue ? 'color-item--blue' : colorGreen ?  'color-item--green' : colorPurple ? 'color-item--purple': colorOrange ? 'color-item--orange' : '']"
-        >  
-
-            <div class="mode-color-container">
-            
-                <toggle :darkMode="darkMode" :textMode="textMode" @lightMode="lightMode"/>
-                <ToggleColor 
-                @changeColorBlue="changeColorBlue" 
-                @changeColorGreen="changeColorGreen" 
-                @changeColorPurple="changeColorPurple" 
-                @changeColorOrange="changeColorOrange"
-                @audioFocus="audioFocus"
-                :colorBlue="colorBlue" 
-                :colorGreen="colorGreen" 
-                :colorPurple="colorPurple" 
-                :colorOrange="colorOrange"                 
-            />
-                <Multilanguage
-                :titleLanguage="titleLanguage"
-                @audioFocus="audioFocus"
-                />
-            </div>
-            
-            <main class="main">
-                <section class="column column--left">
-                    <CardProfile @audioFocus="audioFocus"/>
-                    <Hobbies />
-                </section>
-                <section class="column column--right">
-                    <Skills />
-                    <CardExperience />
-                    <Projects  @audioFocus="audioFocus"/>                    
-
-            </section>
-            </main>   
-        </div>
+  
+    <div class="mode-color-container">
+    
+        <toggle :darkMode="darkMode" :textMode="textMode" @lightMode="lightMode"/>
+        <ToggleColor 
+        @changeColorBlue="changeColorBlue" 
+        @changeColorGreen="changeColorGreen" 
+        @changeColorPurple="changeColorPurple" 
+        @changeColorOrange="changeColorOrange"
+        @audioFocus="audioFocus"
+        :colorBlue="colorBlue" 
+        :colorGreen="colorGreen" 
+        :colorPurple="colorPurple" 
+        :colorOrange="colorOrange"                 
+    />
+        <Multilanguage
+        :titleLanguage="titleLanguage"
+        @audioFocus="audioFocus"
+        />
     </div>
+    
+    <main class="main">
+        <section class="column column--left">
+            <CardProfile @audioFocus="audioFocus"/>
+            <Hobbies />
+        </section>
+        <section class="column column--right">
+            <Skills />
+            <CardExperience />
+            <Projects  @audioFocus="audioFocus"  :totalProjects="totalProjects" @counterProjects="counterProjects"/>                    
+
+    </section>
+    </main>   
 </template>
 
 <script>
-import { defineAsyncComponent } from 'vue'
+import { defineAsyncComponent, ref } from 'vue';
 
 export default {
     name: 'Portafolio',
@@ -67,7 +61,8 @@ export default {
             colorPurple: false,
             colorOrange: false,
             srcFocusAudio: require('../assets/audios/audio-click.mp3'),
-            focusAudio: new Audio()
+            focusAudio: new Audio(),
+            totalProjects: 0,
         }
 
     },
@@ -76,9 +71,11 @@ export default {
         lightMode() {
             this.audioFocus()
             if(this.darkMode) {
-                this.textMode = 'Dark Mode'
+                 document.body.classList.add('lightMode')
+                 document.body.classList.remove('dark')
             } else {
-                this.textMode = 'Light Mode'
+                 document.body.classList.add('dark')
+                 document.body.classList.remove('lightMode')
                 
             }
                 this.darkMode = !this.darkMode
@@ -86,40 +83,38 @@ export default {
 
         changeColorBlue( ) {
             this.audioFocus()
-            this.colorBlue = true        
+            document.body.classList.add('color-item--blue')        
 
-            this.colorGreen = false
-            this.colorPurple = false
-            this.colorOrange = false
-            
+            document.body.classList.remove('color-item--green')   
+            document.body.classList.remove('color-item--purple')   
+            document.body.classList.remove('color-item--orange')               
         },
 
         changeColorGreen( ) {
             this.audioFocus()
-            this.colorGreen = true
+            document.body.classList.add('color-item--green')   
 
-            this.colorBlue = false 
-            this.colorBlue = false
-            this.colorPurple = false
+            document.body.classList.remove('color-item--blue')   
+            document.body.classList.remove('color-item--purple')   
+            document.body.classList.remove('color-item--orange')   
         },  
 
         changeColorPurple( ) {
             this.audioFocus()
-            this.colorPurple = true
+            document.body.classList.add('color-item--purple')   
             
-            this.colorBlue = false 
-            this.colorGreen = false
-            this.colorOrange = false
+            document.body.classList.remove('color-item--blue')   
+            document.body.classList.remove('color-item--green')   
+            document.body.classList.remove('color-item--orange')   
         },
 
         changeColorOrange( ) {
             this.audioFocus()
-            this.colorOrange = true
+            document.body.classList.add('color-item--orange')   
             
-            this.colorBlue = false 
-            this.colorGreen = false
-            this.colorPurple = false
-            
+            document.body.classList.remove('color-item--blue')   
+            document.body.classList.remove('color-item--green')   
+            document.body.classList.remove('color-item--purple')   
         },
 
         audioFocus() {
@@ -134,12 +129,21 @@ export default {
   
         },
 
-    },
+        counterProjects() {
+           this.totalProjects = document.querySelectorAll('.project_info').length
+            console.log(this.totalProjects)
+        }
+ },
 
+    mounted(){
+        document.body.classList.add('dark')
+       
+    }
 }   
 </script>
 
 <style>
+
 
 .mode-color-container {
     display: flex;
@@ -156,17 +160,9 @@ export default {
     background-color: var(--bg-color);
     align-items: flex-start;
     padding-bottom: 2em;
+    margin: 1em;
     transition: var(--transition);
 
-}
-
-@media screen and (min-width: 720px) {
-    .main{
-        grid-template-columns:  min-content repeat(2, 1fr);
-        grid-template-columns: repeat(3, min-content);
-        justify-content: center;
-        gap: 0.6em;
-    }
 }
 
 .column {
@@ -174,8 +170,19 @@ export default {
     gap: .5em;
 }
 
+.dark {
+    color: var(--text-color); 
+    background-color: var(--bg-color);
+    transition: var(--transition);
+}
 @media screen and (min-width: 720px) {
-    
+    .main{
+        grid-template-columns:  min-content repeat(2, 1fr);
+        grid-template-columns: repeat(3, min-content);
+        justify-content: center;
+        gap: 0.6em;
+    }
+
     .column--left {
         grid-template-columns: min-content;
         grid-template-rows: min-content;
@@ -189,11 +196,55 @@ export default {
 
 }
 
-.dark {
-    color: var(--text-color); 
-    background-color: var(--bg-color);
-    transition: var(--transition);
+
+
+
+@media screen and (max-width: 719px) {
+    #app {
+        width: min-content;
+        height: min-content;
+
+    }
+
+    .mode-color-container {
+        height: min-content;
+        padding-bottom: 3em;
+    }
+    
+    section {
+        margin: 0em 2em;
+    }
+
+    .main {
+        gap: 2em;
+    }
+
+
 }
 
+@media screen and (min-width: 720px) {
+    
+    #app {
+        width: min-content;
+        height: min-content;
 
+    }
+
+   
+
+    .main {
+        grid-template-columns: min-content min-content;
+        grid-template-rows: min-content;
+        margin: 1em;
+    }
+}
+
+@media screen and (min-width: 1260px) {
+    
+
+     .mode-color-container {
+        width: 100vw;
+    }
+
+}
 </style>

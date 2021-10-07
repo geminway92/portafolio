@@ -110,4 +110,26 @@ export default {
   color: var(--primary-color);
 }
 
+@media screen and (max-width: 719px) {
+ .card--experience {
+   width: 95%;
+   margin: auto;
+ }   
+
+ .card__title {
+   font-size: 3em;
+   margin-bottom: .6em;
+ }
+
+ .experience {
+   width: 95%;
+   margin: 1.5em;
+ }
+
+ .experience__time,
+ .experience__job {
+   font-size: 2.4em;
+   margin: .5em .1em;
+ }
+}
 </style>

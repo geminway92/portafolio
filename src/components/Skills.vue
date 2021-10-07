@@ -127,6 +127,36 @@ export default {
     transform: translateX(50%);
 }
 
+@media screen and (max-width: 719px) {
+ .skills {
+    width: 95%;
+    margin: auto;
+ }   
+
+ .skills h2 {
+     font-size: 3em;
+ }
+
+ .skills_tech {
+     font-size: 2.5em;
+     margin-left: 0.3em;
+ }
+
+ .skills_bar,
+ .skills_level {
+      width: 400px;
+      height: 20px;
+      top: 2.3em;
+  }
+
+    .skills_level {
+        position: relative;
+        top: 0px;
+        left: 11px;
+    }
+ 
+
+}
 
 
 

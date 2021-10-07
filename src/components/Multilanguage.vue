@@ -59,5 +59,53 @@ export default {
     margin-right: 6px;    
 }
 
+@media screen and (max-width: 719px) {
 
+    .button-languague {
+        width: 220px;
+        height: 100%;
+        top: 1.3em;
+        right: 0;
+    }
+
+    .icon-languague {
+        font-size: 1.2em;
+        margin-top: .1em;
+    }
+    
+
+    .select-languague {
+        width: 220px;
+        font-size: 1.2em;
+        margin-left: 10px;
+    
+    }
+    .select-languague option {
+        font-size: 0.3em;
+    }
+}
+
+@media screen and (min-width: 720px) {
+
+    .button-languague {
+        width: min-content;
+    }
+
+    .select-languague {
+        font-size: .6em;
+    }
+    .select-languague option {
+        font-size: 0.6em;
+    }
+}
+
+@media screen and (min-width: 1260px) {
+    .select-languague {
+        font-size: .5em;
+    }
+
+    .select-languague option {
+        font-size: 1em;
+    }
+}
 </style>

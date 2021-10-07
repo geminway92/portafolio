@@ -1,5 +1,9 @@
+import { defineAsyncComponent } from 'vue';
 <template>
   <div class="projects-container">
+    <div class="projects__title-projects">
+      <h2 class="card_title">Projects ({{totalProjects}})</h2>
+    </div>
     <div class="projects">
         <img src="../assets/images/photo-projects-pokemon.jpg" alt="Pokemon Page project" class="project_image">
       <div class="project_info">
@@ -84,18 +88,41 @@
 
           </div>
       </div>
+      
     </div>
+
   </div>
   
 </template>
 
 <script>
 export default {
-  
+  props: {
+    totalProjects: {
+      type: Number,
+      default: 1
+    }
+  },
+
+  mounted() {
+
+    this.$emit('counterProjects')
   }
+  
+
+}
 </script>
 
 <style scoped>
+.projects__title-projects {
+  width: 820px;
+  height: min-content;
+  padding: 1em;
+  font-size: .8em;
+  border-radius: var(--border-radius);
+  background-color: var(--bg-card-color);
+  transition: var(--transition);
+}
 .projects-container {
   display: grid;
   align-items: flex-start;
@@ -181,6 +208,76 @@ export default {
   background-color: transparent;
   color: var(--primary-color);
   border: 1px solid var(--primary-color);
+}
+
+@media screen and (max-width:719px) {
+
+  
+  .projects__title-projects {
+    width: 90%;
+    font-size: 2em;
+    margin: auto;
+  }
+
+   .projects {
+     width: 95%;
+    height: min-content;
+    margin: auto;
+    flex-wrap: wrap;
+  }
+
+  .project_image {
+    max-width: 100%;
+     height: min-content;
+     margin: auto;
+  }
+  
+  .project_tags {
+    font-size: 1.8em;
+    margin-bottom: 1em;
+    gap: .4em;
+
+  }
+  .project_tags--journal {
+    width: max-content;
+  /* grid-template-columns: repeat(5, 1fr); */
+  }
+
+  .project__title {
+    font-size: 3em;
+    margin-left: .3em;
+  }
+  .project__text {
+    font-size: 2.5em;
+    margin-left: .3em;;
+    
+  }
+
+  .buttons {
+    width: min-content;
+    position: relative;
+    margin: auto;
+  }
+
+  .button {
+    width: 200px;
+    font-size: 2em;
+    margin: 0 1em 1em 0;
+  }
+}
+
+@media screen and (min-width: 720px) {
+  .projects-container {
+    width: 760px;
+  }
+
+  .projects__title-projects {
+    width: 97%;
+  }
+  .projects {
+    width: 96%;
+  }
+ 
 }
 
 </style>

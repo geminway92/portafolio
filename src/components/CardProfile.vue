@@ -3,7 +3,7 @@
         <div class="card-profile-image-container">
             <img src="../assets/images/photo-portafolio.jpg" alt="profile" class="card-profile-image">
         </div>
-        <h2 class="title">Gema Martín</h2>
+            <h2 class="title">Gema Martín</h2>
         <p class="subtitle"> Frontend developer</p>
         <div class="card-profile-info">
             <div class="email">
@@ -44,7 +44,6 @@ a{
 .card-profile {
     background-color: var(--bg-card-color);
     width: 250px;
-    /* height: 490px; */
     padding: 1em;
     border-radius: .3em;   
     transition: var(--transition);
@@ -82,5 +81,50 @@ a{
     font-size: 0.9em;
 }
 
+@media screen and (max-width: 719px) {
+ .card-profile {
+     display: flex;
+     width: 95%;
+     flex-direction: column;
+    margin: auto;
+    order: 1;
+ }   
+
+ .card-profile-image-container {
+    height: min-content;
+    width: 500px;
+ }
+ 
+ .card-profile-image {
+     width: 80%;
+     height: 100%;
+     margin: auto;
+ }
+
+ .title {
+     font-size: 3em;
+     margin-left: .7em;
+ }
+
+ .subtitle {
+    font-size: 2em;
+    margin-left: 1em;
+
+ }
+
+ .card-profile-info {
+    height: min-content;
+    margin: 0 10px 0 2em;
+ }
+
+ .email,
+ .github,
+ .linkedin,
+ .card-profile-description {
+     font-size: 2.5em;
+ }
+
+
+}
 
 </style>

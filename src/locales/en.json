@@ -23,7 +23,7 @@
   },
 
   "Projects": {
-    "text-pokemonPage": "Project that simulates a portable console. The game consists in that you are shown a hidden Pokemon and you are given four options, you have to find out which Pokemon it is. Once you choose the pokemon you are shown the image. You start with 3 lives, if you fail 3 times you lose. If you guess right you add game, then you can add your name in the points ranking list. The PokéApi is consumed.",
+    "text-pokemonPage": "Project that simulates a portable console. The game consists of showing you a hidden pokemon and giving you four options, you have to figure out which pokemon it is. Once you choose the pokemon you are shown the image. You start with 3 lives, if you miss 3 times you lose. If you guess right you get points, when you finish the three lives you can add your name in the ranking list. It consumes the PokéApi API.",
     "text-questionme": "Funny app to which you ask a question and it answers 'Yes', 'No' or 'Maybe'. It uses the API yesno.wtf. Important! to get an answer, you must end the question with the symbol '?'",
     "text-journal": "App for publications, it has an authentication to access it. You can add, update and delete publication, as well as add an image to it.",
     "text-blacklist": "Famous card game, also called twenty-one. It is a casino game with one or more English decks of 52 cards without jokers, which consists of adding a value as close to 21 as possible without going over."

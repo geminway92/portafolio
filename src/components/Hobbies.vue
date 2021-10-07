@@ -67,4 +67,37 @@ export default {
     border-radius: var(--border-radius);
 }
 
+@media screen and (max-width: 719px) {
+ .card-hobbies {
+     width: 95%;
+     margin: auto;
+     order: 3;
+ }   
+
+ .title {
+     font-size: 3em;
+ }
+ 
+ .hobbie__title {
+     font-size: 2.5em;
+    margin: 0 1em 1em 1em;
+ }
+
+ .hobbie__description {
+     font-size: 2.5em;
+    margin: 0 1em 1em 1em;
+
+ }
+ 
+ .hobbie__image-container {
+    width: 100%;
+ }
+
+ .hobbie__image {
+     width: 100%;
+     height: 400px;
+     border-radius: 4em;
+     margin: 1em ;
+ }
+}
 </style>
