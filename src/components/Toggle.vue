@@ -58,7 +58,7 @@ export default {
     margin: 20px 0 0 10px
 }
 
-@media (max-width: 719px){
+@media (max-width: 720px){
     .toggle {
         width: 250px;
         height: 100%;

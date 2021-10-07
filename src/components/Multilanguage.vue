@@ -63,9 +63,7 @@ export default {
 
     .button-languague {
         width: 220px;
-        height: 100%;
-        top: 1.3em;
-        right: 0;
+        
     }
 
     .icon-languague {
@@ -85,19 +83,6 @@ export default {
     }
 }
 
-@media (min-width: 720px) {
-
-    .button-languague {
-        width: min-content;
-    }
-
-    .select-languague {
-        font-size: .6em;
-    }
-    .select-languague option {
-        font-size: 0.6em;
-    }
-}
 
 @media (min-width: 1260px) {
     .select-languague {

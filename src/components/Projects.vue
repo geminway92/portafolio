@@ -210,7 +210,7 @@ export default {
   border: 1px solid var(--primary-color);
 }
 
-@media (max-width:719px) {
+@media (max-width: 720px) {
 
   
   .projects__title-projects {

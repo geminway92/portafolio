@@ -127,7 +127,7 @@ export default {
     transform: translateX(50%);
 }
 
-@media (max-width: 719px) {
+@media (max-width: 720px) {
  .skills {
     width: 95%;
     margin: auto;

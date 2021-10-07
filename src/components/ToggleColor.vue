@@ -41,7 +41,7 @@ export default {
   cursor: pointer;
 }
 
-@media (max-width: 719px) {
+@media (max-width: 720px) {
   .colors {
     position: relative;
     width: 300px;
