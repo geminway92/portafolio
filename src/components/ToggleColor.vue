@@ -51,7 +51,7 @@ export default {
 
   .colors-item {
     left: 3em;
-    top: 30px;
+    top: 2.5em;
     width: 40px;
     height: 40px;
     margin-left: 1.5em;
@@ -61,7 +61,8 @@ export default {
 
 @media (min-width: 721px) {
   .colors {
-    bottom: .9em;
+    bottom: 0em;
+    top: 4em;
   }
 
   .colors-item {
@@ -70,6 +71,8 @@ export default {
     left: 1em;
   }
 }
+
+
 </style>
 
 

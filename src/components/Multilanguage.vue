@@ -35,18 +35,23 @@ export default {
 </script>
 
 <style scoped>
-@media (max-width: 720px) {
-    .button-languague {
+.button-languague {
         display: flex;
         font-size: 2em;
         position:relative;
-        width: 220px;
+        width: min-content;
         height: min-content;
+        justify-content: space-between;
         background-color: var(--bg-card-color);
         transition: var(--transition);
+        cursor: pointer;
+}
+
+@media (max-width: 720px) {
+    .button-languague {
+        font-size: 2em;
         right: 30px;
         top: 1.2em;
-        cursor: pointer;
     }
     
     .select-languague {
@@ -55,6 +60,13 @@ export default {
         margin-left: 10px;
         background: var(--bg-color);
         color: var(--text-color);
+    }
+
+    .icon-languague {
+        position: relative;
+        font-size: 1em;
+        margin-right: .4em;
+        top: .1em;
     }
     
     .select-languague option {
@@ -66,17 +78,27 @@ export default {
 
 @media (min-width: 721px) {
     .button-languague {
+        width: min-content;
+        height: min-content;
         font-size: 2em;
+        top: .5em;
+        right: 1em;
+        
     }
     .select-languague {
         font-size: .5em;
     }
 
     .icon-languague {
+        position: relative;
         font-size: .6em;
+        margin-right: .4em;
+        top: .1em;
     }
     .select-languague option {
         font-size: .6em;
     }
 }
+
+
 </style>
