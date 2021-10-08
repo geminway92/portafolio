@@ -42,23 +42,24 @@ export default {
         width: min-content;
         height: min-content;
         justify-content: space-between;
-        background-color: var(--bg-card-color);
         transition: var(--transition);
+        color: var(--text-color);
         cursor: pointer;
 }
 
-@media (max-width: 720px) {
+@media screen and (max-width: 430px) {
+
+    
     .button-languague {
         font-size: 2em;
         right: 30px;
-        top: 1.2em;
+        top: 1.8em;
     }
     
     .select-languague {
-        width: 220px;
         font-size: 1.2em;
         margin-left: 10px;
-        background: var(--bg-color);
+        background-color: var(--bg-color);
         color: var(--text-color);
     }
 
@@ -76,17 +77,15 @@ export default {
 }
 
 
-@media (min-width: 721px) {
+@media screen and (min-width: 700px) and (max-width: 1000px) {
     .button-languague {
-        width: min-content;
-        height: min-content;
-        font-size: 2em;
-        top: .5em;
+        /* font-size: 2em; */
+        top: .4em;
         right: 1em;
         
     }
     .select-languague {
-        font-size: .5em;
+        font-size: .6em;
     }
 
     .icon-languague {
@@ -96,7 +95,51 @@ export default {
         top: .1em;
     }
     .select-languague option {
+        font-size: .8em;
+    }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1600px) {
+    .button-languague {
+        /* font-size: 2em; */
+        top: .4em;
+        right: 1em;
+        
+    }
+    .select-languague {
         font-size: .6em;
+    }
+
+    .icon-languague {
+        position: relative;
+        font-size: .6em;
+        margin-right: .4em;
+        top: .1em;
+    }
+    .select-languague option {
+        font-size: .8em;
+    }
+}
+
+@media screen and (min-width: 1600px){
+    .button-languague {
+        /* font-size: 2em; */
+        top: .4em;
+        right: 1em;
+        
+    }
+    .select-languague {
+        font-size: .6em;
+    }
+
+    .icon-languague {
+        position: relative;
+        font-size: .6em;
+        margin-right: .4em;
+        top: .1em;
+    }
+    .select-languague option {
+        font-size: .8em;
     }
 }
 

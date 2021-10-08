@@ -34,9 +34,10 @@ a {
 
 .lightMode{
     background-color: var(--bg-color);
-    width: 100%;
+    width: 100vh;
     transition: var(--transition);
 }
+
 
 .dark {
     --text-color: hsl(0, 0%, 85%);
@@ -45,7 +46,12 @@ a {
     --bg-card-color: hsl(0, 0%, 20%);
 }
 
-
+.dark {
+    width: 100vh;
+    color: var(--text-color); 
+    background-color: var(--bg-color);
+    transition: var(--transition);
+}
 
 .color-item--blue {
     --primary-color: hsl(214, 84%, 56%);

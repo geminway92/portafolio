@@ -67,11 +67,10 @@ export default {
     border-radius: var(--border-radius);
 }
 
-@media (max-width: 720px) {
+@media screen and (max-width: 430px) {
  .card-hobbies {
      width: 95%;
      margin: auto;
-     order: 3;
  }   
 
  .title {

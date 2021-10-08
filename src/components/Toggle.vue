@@ -31,11 +31,8 @@ export default {
 
 .toggle {
     display: flex;
-    width: 140px;
-    height: 60px;
     cursor: pointer;
     position: relative;
-    left: 170px;
 }
 
 .toggle-toggle-icon:hover {
@@ -45,9 +42,6 @@ export default {
 
 .toggle-toggle-icon {
     color: var(--text-color);
-    margin: 22px 0 0 10px;
-    left: 100px;
-
 }
 
 .toggle-theme-text {
@@ -55,35 +49,71 @@ export default {
     font-family: 'Open Sans', sans-serif;
     font-weight: normal;
     color: var(--text-color);
-    margin: 20px 0 0 10px
 }
 
-@media (max-width: 720px){
+@media screen and (max-width: 430px){
     .toggle {
-        width: 250px;
+        width: 20%;
         height: 100%;
-        top: 1em;
         left: 0;
     }
     
     .toggle-toggle-icon {
         font-size: 2.2em;
-        margin-top: 30px;
-    }
-
-    .toggle-theme-text {
-        font-size: 35px;
+        position: relative;
+        margin: 1em;
+        top: .8em;
     }
 }
 
-@media (min-width: 721px){
+@media screen and (min-width: 700px) and (max-width: 1000px){
     .toggle {
-        width: 250px;
-        height: 100%;
-        top: 0em;
-        left: 0em;
+        width: 120px;
     }
     
+    .toggle-toggle-icon {
+        position: relative;
+        top: 1em;
+        margin-left: 10px;
+
+    }
+    
+    .toggle-theme-text {
+        margin-left: 10px;
+    }
 }
 
+@media screen and (min-width: 1000px) and (max-width: 1600px){
+    .toggle {
+        width: 120px;
+    }
+    
+    .toggle-toggle-icon {
+        position: relative;
+        top: 1em;
+        margin-left: 10px;
+
+    }
+    
+    .toggle-theme-text {
+        margin-left: 10px;
+    }
+}
+
+@media screen and (min-width: 1600px){
+    .toggle {
+        width: 120px;
+    }
+    
+    .toggle-toggle-icon {
+        position: relative;
+        top: 1em;
+        margin-left: 10px;
+
+    }
+    
+    .toggle-theme-text {
+        margin-left: 10px;
+    }
+}
 </style>

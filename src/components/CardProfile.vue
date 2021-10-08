@@ -43,7 +43,6 @@ a{
 
 .card-profile {
     background-color: var(--bg-card-color);
-    width: 250px;
     padding: 1em;
     border-radius: .3em;   
     transition: var(--transition);
@@ -58,8 +57,6 @@ a{
 }
 
 .card-profile-image {
-    width: inherit;
-    height: inherit;
     display: block;
     object-fit: cover;
     margin-left: 30px;
@@ -81,22 +78,22 @@ a{
     font-size: 0.9em;
 }
 
-@media (max-width: 720px) {
+@media screen and (max-width: 430px) {
  .card-profile {
      display: flex;
-     width: 95%;
      flex-direction: column;
-    margin: auto;
-    order: 1;
- }   
+     margin-top: 2em;
+     margin-bottom: 2em;
+ }
 
  .card-profile-image-container {
+     width: 90vh;
     height: min-content;
-    width: 500px;
+    margin: auto;
  }
  
  .card-profile-image {
-     width: 80%;
+     width: 70%;
      height: 100%;
      margin: auto;
  }

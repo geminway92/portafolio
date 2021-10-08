@@ -31,22 +31,18 @@ export default {
 
 .colors-item {
   position: relative;
-  width: 20px;
-  height: 20px;
   border: 1px solid var(--text-color );
   background-color: var(--primary-color);
-  margin-left: 4px;
-  top: 18px;
-  left: 480px;
   cursor: pointer;
 }
 
-@media (max-width: 720px) {
+@media screen and (max-width: 430px) {
   .colors {
     position: relative;
     width: 300px;
     height: 100%;
-    right: 50px;
+    right: 5em;
+    top: 1.2em;
   }
 
   .colors-item {
@@ -59,20 +55,50 @@ export default {
 }
 
 
-@media (min-width: 721px) {
+@media screen and (min-width: 700px) and (max-width: 1000px){
   .colors {
-    bottom: 0em;
-    top: 4em;
+    width: min-content;
+    position: relative;
+    top: .5em;
   }
 
   .colors-item {
-    width: 20px;
-    height: 20px;
-    left: 1em;
+    width: 30px;
+    height: 30px;
+    margin-left: 1em;
   }
 }
 
+@media screen and (min-width: 1000px) and (max-width: 1600px) {
+    .colors {
+    width: min-content;
+    position: relative;
+    top: .5em;
+  }
 
+  .colors-item {
+    width: 30px;
+    height: 30px;
+    margin-left: 1em;
+  }
+
+}
+
+
+@media screen and (min-width: 1600px) {
+    .colors {
+    width: min-content;
+    position: relative;
+    top: .5em;
+  }
+
+  .colors-item {
+    width: 30px;
+    height: 30px;
+    margin-left: 1em;
+  }
+
+}
 </style>
 
 

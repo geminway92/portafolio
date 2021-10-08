@@ -54,7 +54,7 @@ export default {
     data() {
         return {
             darkMode: true,
-            textMode: 'Light Mode',
+            textMode: '',
             titleLanguage: 'Inglés',
             colorBlue: false ,
             colorGreen: false,
@@ -73,10 +73,20 @@ export default {
             if(this.darkMode) {
                  document.body.classList.add('lightMode')
                  document.body.classList.remove('dark')
+                 if(window.screen.width >= 700) {
+                     this.textMode = 'Dark Mode'
+                 } else {
+                     this.textMode = ''
+                 }
+
             } else {
                  document.body.classList.add('dark')
                  document.body.classList.remove('lightMode')
-                
+                if(window.screen.width >= 700) {
+                    this.textMode = 'Ligth Blue'
+                } else {
+                    this.textMode = ''
+                }
             }
                 this.darkMode = !this.darkMode
         },
@@ -124,37 +134,41 @@ export default {
 
         changelanguague() {
             const lang = this.$i18n.locale
-            console.log(lang )
-            
-  
         },
 
         counterProjects() {
            this.totalProjects = document.querySelectorAll('.project_info').length
             console.log(this.totalProjects)
+        },
+
+        watchScreenWidth() {
+            if(window.screen.width >= 700) {
+                this.textMode = 'Ligth Mode'
+            } else {
+                this.textMode = ''
+            }
         }
+
  },
 
     mounted(){
         document.body.classList.add('dark')
+        this.watchScreenWidth()
        
     }
 }   
 </script>
 
 <style>
+
 #app {
-        width: min-content;
-        height: min-content;
-
+    width: min-content;
+    height: min-content;
+    margin-bottom: 2em;
 }
-
 .mode-color-container {
     display: flex;
-    width: 100%;
-    height: 60px;
     justify-content: space-between;
-    margin-bottom: 15px;
     background-color: var(--bg-card-color);
     transition: var(--transition);
 }
@@ -162,33 +176,36 @@ export default {
 .main {
     display: grid;
     background-color: var(--bg-color);
-    align-items: flex-start;
-    padding-bottom: 2em;
-    margin: 1em;
     transition: var(--transition);
 
 }
 
 .column {
     display: grid;
-    gap: .5em;
 }
 
-.dark {
-    color: var(--text-color); 
-    background-color: var(--bg-color);
-    transition: var(--transition);
-}
-@media (min-width: 721px) {
-
-
-    .mode-color-container {
+@media screen and (max-width: 430px) {
+    
+    .main {
         width: 100%;
+        gap: 2em
     }
 
+    .mode-color-container {
+        height: min-content;
+        padding-bottom: 3em;
+    }
+
+}
+
+
+@media screen and (min-width: 700px) and (max-width: 1000px) {
+    .mode-color-container {
+        width: 100%;
+        height: 50px;
+    }
     .main{
-        margin: 2em;
-        grid-template-columns:  min-content repeat(2, 1fr);
+        margin: 1.5em;
         grid-template-columns: repeat(3, min-content);
         justify-content: center;
         gap: 0.6em;
@@ -198,40 +215,83 @@ export default {
         grid-template-columns: min-content;
         grid-template-rows: min-content;
         align-items: flex-start;
-    }
+
+        gap: 1em;
+    
+    }   
 
     .column--right{
-        grid-template-columns:  305px 1fr;
+        grid-template-columns: 220px 230px;
+        grid-template-rows: 420px;
         align-items: flex-start;
+        gap: .5em;
     }
 
 }
 
 
-
-
-@media (max-width: 720px) {
-    
-
+@media screen and (min-width: 1000px) and (max-width: 1600px) {
     .mode-color-container {
-        height: min-content;
-        padding-bottom: 3em;
+        width: 100%;
+        height: 50px;
     }
+
+    .main{
+        margin: 1.5em;
+        grid-template-columns: repeat(3, min-content);
+        justify-content: center;
+        gap: 1em;
+    }
+
+    .column--left {
+        grid-template-columns: min-content;
+        grid-template-rows: min-content;
+        align-items: flex-start;
+
+        gap: 1em;
     
-    section {
-        margin: 0em 2em;
-    }
+    }   
 
-    .main {
-        gap: 2em;
+    .column--right{
+        grid-template-columns: 300px 350px;
+        grid-template-rows: 420px;
+        align-items: flex-start;
+        gap: 1em;
     }
-
 
 }
 
-@media (min-width: 1130px) {
+
+@media screen and (min-width: 1600px) {
     .mode-color-container {
         width: 100vw;
+        height: 50px;
     }
+
+    .main{
+        margin: 1.5em;
+        grid-template-columns: repeat(3, min-content);
+        justify-content: center;
+        gap: 1em;
+    }
+
+    .column--left {
+        grid-template-columns: min-content;
+        grid-template-rows: min-content;
+        align-items: flex-start;
+
+        gap: 1em;
+    
+    }   
+
+    .column--right{
+        grid-template-columns: 300px 350px;
+        grid-template-rows: 420px;
+        align-items: flex-start;
+        gap: 1em;
+    }
+
 }
+
+
 </style>

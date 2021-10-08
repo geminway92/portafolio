@@ -71,12 +71,9 @@ export default {
 <style scoped>
 .skills {
     background-color: var(--bg-card-color);
-    width: 270px;
-    /* height: 400px; */
     padding: 1em ;
     border-radius: var(--border-radius); 
     transition: var(--transition);
-
 }
 
 .skills h2 {
@@ -127,7 +124,7 @@ export default {
     transform: translateX(50%);
 }
 
-@media (max-width: 720px) {
+@media screen and (max-width: 430px) {
  .skills {
     width: 95%;
     margin: auto;
@@ -158,6 +155,14 @@ export default {
 
 }
 
+@media screen and (min-width: 700px) and (max-width: 1000px) {
+  .skills_bar, 
+  .skills_level {
+    width: 100px;
+    height: 8px;
+}
+
+}
 
 
 </style>

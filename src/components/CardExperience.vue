@@ -74,29 +74,27 @@ export default {
 <style scoped>
 .card--experience {
   background-color: var(--bg-card-color);
-  width: 420px;
-  padding: .9em;
   border-radius: var(--border-radius); 
   transition: var(--transition);
 }
 
 .experience {
   display: flex;
-  padding: 15px 0px 15px 10px;
-  margin-bottom: 1em;
+  padding: 1em .6em ;
+  margin: auto;
   border: 2px solid var(--primary-color);
   border-radius: var(--border-radius); 
 
 }
 
 .experience_image {
-  max-width: 20%;
+  max-width: 30%;
   margin-right: 2em;
 }
 
 .card__title {
   font-size: 1.2rem;
-  margin: 2px 0px 15px 0px;
+  margin: .5em 0.5em;
 }
 
 .experience__time {
@@ -110,10 +108,10 @@ export default {
   color: var(--primary-color);
 }
 
-@media (max-width: 320px) {
- .card--experience {
-   width: 95%;
-   margin: auto;
+@media screen and (max-width: 430px) {
+  .card--experience {
+   padding: .9em;
+   margin-top: 2em;
  }   
 
  .card__title {
@@ -122,8 +120,8 @@ export default {
  }
 
  .experience {
-   width: 95%;
-   margin: 1.5em;
+   width: 80%;
+   margin-top: 1em;
  }
 
  .experience__time,
@@ -131,5 +129,6 @@ export default {
    font-size: 2.4em;
    margin: .5em .1em;
  }
+
 }
 </style>

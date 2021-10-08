@@ -11,7 +11,7 @@ import { defineAsyncComponent } from 'vue';
         <div class="project_tags">
           <span class="project_tag">#HTML</span>
           <span class="project_tag">#CSS</span>
-          <span class="project_tag">#JavaScript</span>
+          <span class="project_tag">#JS</span>
           <span class="project_tag">#VueJs</span>
           <span class="project_tag">#Responsive</span>
         </div>
@@ -30,10 +30,10 @@ import { defineAsyncComponent } from 'vue';
         <img src="../assets/images/photo-projects-questionme.jpg" alt="Pokemon Page project" class="project_image">
       <div class="project_info">
 
-        <div class="project_tags project_tags--questionme">
+        <div class="project_tags project_tags--short">
           <span class="project_tag">#HTML</span>
           <span class="project_tag">#CSS</span>
-          <span class="project_tag">#JavaScript</span>
+          <span class="project_tag">#JS</span>
           <span class="project_tag">#VueJs</span>
         </div>
         <h2 class="project__title">Question me</h2>
@@ -54,7 +54,7 @@ import { defineAsyncComponent } from 'vue';
           <span class="project_tag">#HTML</span>
           <span class="project_tag">#CSS</span>
           <span class="project_tag">#SCSS</span>
-          <span class="project_tag">#JavaScript</span>
+          <span class="project_tag">#JS</span>
           <span class="project_tag">#VueJs</span>
           <span class="project_tag">#Responsive</span>
         </div>
@@ -73,10 +73,10 @@ import { defineAsyncComponent } from 'vue';
         <img src="../assets/images/photo-projects-blacklist.jpg" alt="Pokemon Page project" class="project_image project_image--journal">
       <div class="project_info">
 
-        <div class="project_tags project_tags--journal">
+        <div class="project_tags project_tags--short">
           <span class="project_tag">#HTML</span>
           <span class="project_tag">#CSS</span>
-          <span class="project_tag">#JavaScript</span>
+          <span class="project_tag">#JS</span>
         </div>
         <h2 class="project__title">Blacklist</h2>
         <p class="project__text">
@@ -115,24 +115,22 @@ export default {
 
 <style scoped>
 .projects__title-projects {
-  width: 820px;
-  height: min-content;
   padding: 1em;
-  font-size: .8em;
   border-radius: var(--border-radius);
   background-color: var(--bg-card-color);
   transition: var(--transition);
 }
+
 .projects-container {
   display: grid;
   align-items: flex-start;
-  gap: 10px;
+  gap: 1em;
+  margin: 2em 0;
+
 
 }
  .projects {
    display: flex;
-  width: 820px;
-  height: 300px;
   background-color: var(--bg-card-color);
   padding: 1em;
   border-radius: var(--border-radius);   
@@ -210,13 +208,13 @@ export default {
   border: 1px solid var(--primary-color);
 }
 
-@media (max-width: 720px) {
+@media screen and (min-width: 320px) and (max-width: 430px) {
 
   
   .projects__title-projects {
-    width: 90%;
+    width: 92%;
     font-size: 2em;
-    margin: auto;
+    margin-bottom: .5em;
   }
 
    .projects {
@@ -229,7 +227,7 @@ export default {
   .project_image {
     max-width: 100%;
      height: min-content;
-     margin: auto;
+     /* margin: auto; */
   }
   
   .project_tags {
@@ -240,7 +238,6 @@ export default {
   }
   .project_tags--journal {
     width: max-content;
-  /* grid-template-columns: repeat(5, 1fr); */
   }
 
   .project__title {
@@ -266,18 +263,195 @@ export default {
   }
 }
 
-@media (min-width: 720px) {
+@media screen and (min-width: 700px) and (max-width: 1000px) {
   .projects-container {
-    width: 760px;
+    width: 100%;
   }
 
   .projects__title-projects {
-    width: 97%;
-  }
-  .projects {
-    width: 96%;
+    font-size: .8em;
+    width: 100%;
+    margin-left: 5px;
   }
  
+  .projects {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .project__title {
+    margin-left: 1em;
+  }
+
+  .project_image {
+    max-width: 390px;
+    height: min-content;
+  }
+
+
+  .project_tags span {
+    width: 40%;
+    
+  }
+
+  .project_tags--short {
+    width: 100%;
+  }
+
+  .project_info {
+    width: 60%;
+    height: min-content;
+  }
+
+  .project__text {
+    width: 400px;
+    position: relative;
+    font-size: 1em;
+    left: 1em;
+  }
+  
+  .buttons {
+    width: min-content;
+    position: relative;
+    margin: 0;
+    left: 5em;
+  }
+
+  .button {
+    width: 100px;
+    font-size: 1em;
+    margin: 0 1em 1em 0;
+  }
+
+  
 }
+
+@media screen and (min-width: 1000px) and (max-width: 1600px) {
+  .projects-container {
+    width: 100%;
+  }
+
+  .projects__title-projects {
+    font-size: .8em;
+    width: 100%;
+    margin-left: 5px;
+  }
+ 
+  .projects {
+    width: 100%;
+    display: flex;
+  }
+  
+  .project_image {
+    max-width: 200px;
+    height: min-content;
+    margin: .5em 1em;
+  }
+
+
+  .project_tags span {
+    width: 100%;
+    justify-content: baseline;
+  }
+
+  .project_tags--short {
+    width: 100%;
+  }
+
+  .project_info {
+    width: 60%;
+    height: min-content;
+
+  }
+
+  .project__text {
+    width: 400px;
+    position: relative;
+    font-size: 1em;
+    left: 1em;
+  }
+  
+  .buttons {
+    width: min-content;
+    position: relative;
+    margin: 0;
+    left: 5em;
+  }
+
+  .button {
+    width: 100px;
+    font-size: 1em;
+    margin: 0 1em 1em 0;
+  }
+
+  
+}
+
+
+@media screen and (min-width: 1600px) {
+  .projects-container {
+    width: 100%;
+  }
+
+  .projects__title-projects {
+    font-size: .8em;
+    width: 100%;
+    margin-left: 5px;
+  }
+ 
+  .projects {
+    width: 100%;
+    display: flex;
+  }
+  
+  .project_image {
+    max-width: 200px;
+    height: min-content;
+    margin: .5em 1em;
+  }
+
+  .project__title {
+    margin-left: 1em;
+  }
+  .project_tags span {
+    width: 100%;
+    justify-content: baseline;
+  }
+
+  .project_tags--short {
+    width: 100%;
+  }
+
+  .project_info {
+    width: 60%;
+    height: min-content;
+
+  }
+
+  .project__text {
+    width: 400px;
+    position: relative;
+    font-size: 1em;
+    left: 1em;
+  }
+  
+  .buttons {
+    width: min-content;
+    position: relative;
+    margin: 0;
+    left: 5em;
+  }
+
+  .button {
+    width: 100px;
+    font-size: 1em;
+    margin: 0 1em 1em 0;
+  }
+
+  
+}
+
+
 
 </style>
