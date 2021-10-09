@@ -269,6 +269,9 @@ export default {
   font-size: 0.9em;
 }
 
+ .buttons {
+    margin-left: 20%;
+  }
 
 }
 
