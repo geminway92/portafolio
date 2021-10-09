@@ -15,10 +15,12 @@ import { defineAsyncComponent, ref } from 'vue';
           <span class="project_tag">#VueJs</span>
           <span class="project_tag">#Responsive</span>
         </div>
-        <h2 class="project__title">Pokemon Page</h2>
-        <p class="project__text">
+        <div class="project-description-container">
+          <h2 class="project__title">Pokemon Page</h2>
+          <p class="project__text">
           {{ $t('Projects.text-pokemonPage')}}
-        </p>
+          </p>
+        </div>
           <div class="buttons">
             <a href="https://gameboy-pokemon.netlify.app/" target="_blank" class="button button--primary" @click="this.$emit('audioFocus')">Demo</a>
             <a href="https://github.com/geminway92/gamepokemon2" class="button button--primary-ghost" target="_blank" @click="this.$emit('audioFocus')">Code</a>
@@ -36,10 +38,13 @@ import { defineAsyncComponent, ref } from 'vue';
           <span class="project_tag">#JS</span>
           <span class="project_tag">#VueJs</span>
         </div>
-        <h2 class="project__title">Question me</h2>
-        <p class="project__text">
-          {{ $t('Projects.text-questionme')}}
-        </p>
+        <div class="project-description-container">
+          <h2 class="project__title">Question me</h2>
+          <p class="project__text">
+            {{ $t('Projects.text-questionme')}}
+          </p>
+
+        </div>
           <div class="buttons">
             <a href="https://questionme.netlify.app/" target="_blank" class="button button--primary" @click="this.$emit('audioFocus')">Demo</a>
             <a href="https://github.com/geminway92/questionme" class="button button--primary-ghost" target="_blank" @click="this.$emit('audioFocus')">Code</a>
@@ -50,7 +55,7 @@ import { defineAsyncComponent, ref } from 'vue';
         <img src="../assets/images/photo-projects-journal.jpg" alt="Pokemon Page project" class="project_image project_image--journal">
       <div class="project_info">
 
-        <div class="project_tags project_tags--journal">
+        <div class="project_tags">
           <span class="project_tag">#HTML</span>
           <span class="project_tag">#CSS</span>
           <span class="project_tag">#SCSS</span>
@@ -58,10 +63,12 @@ import { defineAsyncComponent, ref } from 'vue';
           <span class="project_tag">#VueJs</span>
           <span class="project_tag">#Responsive</span>
         </div>
-        <h2 class="project__title">Journal</h2>
-        <p class="project__text">
-          {{ $t('Projects.text-journal')}}
-        </p>
+        <div class="project-description-container">
+          <h2 class="project__title">Journal</h2>
+          <p class="project__text">
+            {{ $t('Projects.text-journal')}}
+          </p>
+        </div>
           <div class="buttons">
             <a href="https://journal-vue.netlify.app/" target="_blank" class="button button--primary" @click="this.$emit('audioFocus')">Demo</a>
             <a href="https://github.com/geminway92/vue-journal-vuex" class="button button--primary-ghost" target="_blank" @click="this.$emit('audioFocus')">Code</a>
@@ -73,15 +80,18 @@ import { defineAsyncComponent, ref } from 'vue';
         <img src="../assets/images/photo-projects-blacklist.jpg" alt="Pokemon Page project" class="project_image project_image--journal">
       <div class="project_info">
 
-        <div class="project_tags project_tags--short">
+        <div class="project_tags ">
           <span class="project_tag">#HTML</span>
           <span class="project_tag">#CSS</span>
           <span class="project_tag">#JS</span>
         </div>
-        <h2 class="project__title">Blacklist</h2>
-        <p class="project__text">
-          {{ $t('Projects.text-blacklist')}}
-        </p>
+        <div class="project-description-container">
+          <h2 class="project__title">Blacklist</h2>
+          <p class="project__text">
+            {{ $t('Projects.text-blacklist')}}
+          </p>
+
+        </div>
           <div class="buttons">
             <a href="https://blacklist-js.netlify.app/" target="_blank" class="button button--primary" @click="this.$emit('audioFocus')">Demo</a>
             <a href="https://github.com/geminway92/blackjack" class="button button--primary-ghost" target="_blank" @click="this.$emit('audioFocus')">Code</a>
@@ -115,16 +125,19 @@ export default {
 
 <style scoped>
 
-
-
  .projects__title-projects {
-   border-radius: var(--border-radius);
+  border-radius: var(--border-radius);
   background-color: var(--bg-card-color);
   transition: var(--transition);
   padding: 1em;
   margin: .5em 0;
   font-size: .8em;
 }
+
+.card_title {
+  margin: 0 35%;
+}
+
 
 .projects {
   display: flex;
@@ -148,11 +161,20 @@ export default {
   
 }
 
+.project-description-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 1em;
+}
 
 .project__title {
   font-size: 1.2em;
   color: var(--primary-color);
+}
 
+.project__text {
+  margin: .5em;
 }
 
 .project_image {
@@ -171,7 +193,7 @@ export default {
   position: relative;
   gap: 2em;
   width: 250px;
-  margin-left: 25%;
+  margin-left: 20%;
 }
 
 
@@ -191,6 +213,9 @@ export default {
 }
 
 @media screen and (width: 320px) {
+  .card_title {
+    width: 100px;
+  }
   .project_tags {
     font-size: .9em;
   }
@@ -199,10 +224,20 @@ export default {
   }
 }
 
+@media screen and (min-width: 700px) {
+  .buttons {
+    margin-left: 30%;
+  }
+}
+
 @media screen and (min-width: 1166px) {
 
  .projects__title-projects {
   margin-bottom: 0em;
+}
+
+.card_title {
+  margin: 0;
 }
 
 .projects-container {
@@ -213,16 +248,25 @@ export default {
 
 }
 
+.project__title {
+  font-size: 1em;
+  margin-left: 0.5em;
+}
+
 .projects {
   margin-bottom: 0em;
 
 }
 
+.project-description-container {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
 
 
 .project__text {
   font-size: 0.9em;
-  padding-right: 1em;
 }
 
 

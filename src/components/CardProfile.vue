@@ -52,13 +52,18 @@ a{
     }
 
     .card-profile-image-container {
-        height: 225px;
-        width: 250px;
+        height: min-content;
+        margin: auto;
         border-radius: inherit;
         overflow: hidden;
         background-color: var(--bg-color);
     }
 
+    .card-profile-image {
+        width: 70%;
+        margin-left: 15%;
+    }
+    
     .title {
         font-size: 1.2rem;
         margin-top: 5px;
@@ -77,10 +82,11 @@ a{
 
 @media screen and (min-width: 1166px) {
 
-    .card-profile-image {
-        margin-left: 30px;
+    
+    .card-profile-image-container {
+        height: 225px;
+        width: 250px;
     }
-
 
 }
 

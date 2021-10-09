@@ -59,7 +59,7 @@ export default {
     option {
         background-color: var(--bg-card-color);
         color: var(--text-color);
-        font-size: .6em;
+        font-size: .9em;
     }
 
 

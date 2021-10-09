@@ -83,6 +83,7 @@ export default {
 
 .skills h2 {
     font-size: 1.2rem;
+    margin: 0 35%;
 }
 
 .skills_item {
@@ -91,7 +92,7 @@ export default {
 }
 
 .skills_tech {
-    font-size: 0.8rem;
+    font-size: 1em;
 }
 
 .skills_bar {
@@ -137,6 +138,9 @@ export default {
         height: min-content;
     }
 
+    .skills h2 {
+        margin: 0;
+    }
 
 }
 

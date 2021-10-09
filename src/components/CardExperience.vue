@@ -81,6 +81,11 @@ export default {
   padding: .1em 1em;
 }
 
+.card__title {
+  margin: .5em 34%;
+  font-size: 1.3em;
+}
+
 .experience {
   display: flex;
   padding: 1em .6em ;

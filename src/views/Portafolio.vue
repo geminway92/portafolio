@@ -199,16 +199,10 @@ export default {
 }
 
 
-@media screen and (max-width: 320px) {
-    .wrapper {
-        grid-template-columns: 90%;
-    }
-}
-
 @media screen and (min-width: 700px) {
     .wrapper {
-        grid-template-columns: min-content 1fr;
-        grid-template-rows: 1410px;
+        grid-template-columns: 300px 1fr;
+        grid-template-rows: 1480px;
     }
 }
 
@@ -237,7 +231,7 @@ export default {
     display: grid;
     
     grid-template-columns: 300px;
-    grid-template-rows: 400px;
+    grid-template-rows: 500px;
     grid: 1em;
 }
 
