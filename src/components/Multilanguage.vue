@@ -62,6 +62,9 @@ export default {
         font-size: .6em;
     }
 
+
+
+
 @media screen and (min-width: 360px) {
     .button-languague {
         margin: 0.2em;

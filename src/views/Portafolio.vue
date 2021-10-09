@@ -201,7 +201,7 @@ export default {
 
 @media screen and (max-width: 320px) {
     .wrapper {
-        grid-template-columns: 85%;
+        grid-template-columns: 90%;
     }
 }
 

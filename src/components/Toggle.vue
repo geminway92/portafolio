@@ -56,9 +56,20 @@ export default {
         margin-left: 0.5em;
     }
 
+
+@media screen and (width: 320px) {
+    .toggle-toggle-icon {
+        margin: 0;
+
+    }
+}
 @media screen and (min-width: 700px) {
     .toggle {
         margin-top: .5em;
+
+    }
+    .toggle-toggle-icon {
+        width: 100%;
     }
 
 }
