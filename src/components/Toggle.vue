@@ -37,6 +37,17 @@ export default {
     left: 1em;   
 }
 
+.toggle-toggle-icon {
+        color: var(--text-color);
+        width: min-content;
+        height: min-content;
+        margin-left: 1em;
+}
+
+.toggle-toggle-icon:hover {
+        color: var(--primary-color);
+}
+
 .toggle-theme-text {
         font-size: 16px;
         font-family: 'Open Sans', sans-serif;
@@ -55,13 +66,9 @@ export default {
 @media screen and (min-width: 1166px) {
 
 
-    .toggle-toggle-icon:hover {
-        color: var(--primary-color);
-    
-    }
-
     .toggle-toggle-icon {
         color: var(--text-color);
+        width: 100%;
         margin-left: 1em;
     }
 
