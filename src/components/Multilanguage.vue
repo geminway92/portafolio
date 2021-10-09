@@ -35,113 +35,49 @@ export default {
 </script>
 
 <style scoped>
-.button-languague {
-        display: flex;
+
+    .button-languague {
         font-size: 2em;
-        position:relative;
-        width: min-content;
-        height: min-content;
-        justify-content: space-between;
+        width: 120px;
         transition: var(--transition);
         color: var(--text-color);
         cursor: pointer;
-}
-
-@media screen and (max-width: 430px) {
-
-    
-    .button-languague {
-        font-size: 2em;
-        right: 30px;
-        top: 1.8em;
     }
-    
+
+    .icon-languague {
+        font-size: .7em;
+        padding-right: .3em;
+        background-color: var(--bg-card);
+    }
+
     .select-languague {
-        font-size: 1.2em;
-        margin-left: 10px;
-        background-color: var(--bg-color);
+        font-size: .5em;
+        background-color: var(--card-color);
         color: var(--text-color);
     }
 
-    .icon-languague {
-        position: relative;
-        font-size: 1em;
-        margin-right: .4em;
-        top: .1em;
+    option {
+        background-color: var(--bg-card-color);
+        color: var(--text-color);
+        font-size: .6em;
     }
+
+@media screen and (min-width: 360px) {
+    .button-languague {
+        margin: 0.2em;
+        position: relative;
+        right: .5em;
+    }
+}
+
+
+@media screen and (min-width: 1166px) {
     
-    .select-languague option {
-        font-size: 0.3em;
-    }
-    
-}
-
-
-@media screen and (min-width: 700px) and (max-width: 1000px) {
-    .button-languague {
-        /* font-size: 2em; */
-        top: .4em;
-        right: 1em;
-        
-    }
-    .select-languague {
-        font-size: .6em;
-    }
-
     .icon-languague {
-        position: relative;
         font-size: .6em;
-        margin-right: .4em;
-        top: .1em;
-    }
-    .select-languague option {
-        font-size: .8em;
-    }
-}
-
-@media screen and (min-width: 1000px) and (max-width: 1600px) {
-    .button-languague {
-        /* font-size: 2em; */
-        top: .4em;
-        right: 1em;
-        
-    }
-    .select-languague {
-        font-size: .6em;
+        padding-right: .3em;
+        background-color: var(--bg-card);
     }
 
-    .icon-languague {
-        position: relative;
-        font-size: .6em;
-        margin-right: .4em;
-        top: .1em;
-    }
-    .select-languague option {
-        font-size: .8em;
-    }
-}
-
-@media screen and (min-width: 1600px){
-    .button-languague {
-        /* font-size: 2em; */
-        top: .4em;
-        right: 1em;
-        
-    }
-    .select-languague {
-        font-size: .6em;
-    }
-
-    .icon-languague {
-        position: relative;
-        font-size: .6em;
-        margin-right: .4em;
-        top: .1em;
-    }
-    .select-languague option {
-        font-size: .8em;
-    }
-}
-
-
+}   
 </style>

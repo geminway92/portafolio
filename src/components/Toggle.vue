@@ -33,87 +33,42 @@ export default {
     display: flex;
     cursor: pointer;
     position: relative;
-}
-
-.toggle-toggle-icon:hover {
-  color: var(--primary-color);
-  
-}
-
-.toggle-toggle-icon {
-    color: var(--text-color);
+    top: 1.5em; 
+    left: 1em;   
 }
 
 .toggle-theme-text {
-    font-size: 16px;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: normal;
-    color: var(--text-color);
-}
+        font-size: 16px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: normal;
+        color: var(--text-color);
+        margin-left: 0.5em;
+    }
 
-@media screen and (max-width: 430px){
+@media screen and (min-width: 700px) {
     .toggle {
-        width: 20%;
-        height: 100%;
-        left: 0;
+        margin-top: .5em;
     }
-    
-    .toggle-toggle-icon {
-        font-size: 2.2em;
-        position: relative;
-        margin: 1em;
-        top: .8em;
-    }
+
 }
 
-@media screen and (min-width: 700px) and (max-width: 1000px){
-    .toggle {
-        width: 120px;
-    }
-    
-    .toggle-toggle-icon {
-        position: relative;
-        top: 1em;
-        margin-left: 10px;
+@media screen and (min-width: 1166px) {
 
-    }
+
+    .toggle-toggle-icon:hover {
+        color: var(--primary-color);
     
-    .toggle-theme-text {
-        margin-left: 10px;
     }
+
+    .toggle-toggle-icon {
+        color: var(--text-color);
+        margin-left: 1em;
+    }
+
+
+
 }
 
-@media screen and (min-width: 1000px) and (max-width: 1600px){
-    .toggle {
-        width: 120px;
-    }
-    
-    .toggle-toggle-icon {
-        position: relative;
-        top: 1em;
-        margin-left: 10px;
 
-    }
-    
-    .toggle-theme-text {
-        margin-left: 10px;
-    }
-}
 
-@media screen and (min-width: 1600px){
-    .toggle {
-        width: 120px;
-    }
-    
-    .toggle-toggle-icon {
-        position: relative;
-        top: 1em;
-        margin-left: 10px;
-
-    }
-    
-    .toggle-theme-text {
-        margin-left: 10px;
-    }
-}
 </style>

@@ -41,85 +41,45 @@ a{
     margin-left: 5px;
 }
 
-.card-profile {
-    background-color: var(--bg-card-color);
-    padding: 1em;
-    border-radius: .3em;   
-    transition: var(--transition);
-}
+    .card-profile {
+        background-color: var(--bg-card-color);
+        max-width: 90%;
+        margin-bottom: 1em;
+        padding: 1em;
+        border-radius: .3em;   
+        object-fit: cover;
+        transition: var(--transition);
+    }
 
-.card-profile-image-container {
-    height: 225px;
-    width: 250px;
-    border-radius: inherit;
-    overflow: hidden;
-    background-color: var(--bg-color);
-}
+    .card-profile-image-container {
+        height: 225px;
+        width: 250px;
+        border-radius: inherit;
+        overflow: hidden;
+        background-color: var(--bg-color);
+    }
 
-.card-profile-image {
-    display: block;
-    object-fit: cover;
-    margin-left: 30px;
-}
+    .title {
+        font-size: 1.2rem;
+        margin-top: 5px;
+    }
 
-.title {
-    font-size: 1.2rem;
-    margin-top: 5px;
-}
+    .subtitle{
+        font-size: .9rem;
+    }
+    .email, .github, .linkedin {
+        margin-bottom: 5px;
+    }
+    .card-profile-description {
+        padding: 1em 0;
+        font-size: 0.9em;
+    }
 
-.subtitle{
-    font-size: .9rem;
-}
-.email, .github, .linkedin {
-    margin-bottom: 5px;
-}
-.card-profile-description {
-    padding: 1em 0;
-    font-size: 0.9em;
-}
+@media screen and (min-width: 1166px) {
 
-@media screen and (max-width: 430px) {
- .card-profile {
-     display: flex;
-     flex-direction: column;
-     margin-top: 2em;
-     margin-bottom: 2em;
- }
-
- .card-profile-image-container {
-     width: 90vh;
-    height: min-content;
-    margin: auto;
- }
- 
- .card-profile-image {
-     width: 70%;
-     height: 100%;
-     margin: auto;
- }
-
- .title {
-     font-size: 3em;
-     margin-left: .7em;
- }
-
- .subtitle {
-    font-size: 2em;
-    margin-left: 1em;
-
- }
-
- .card-profile-info {
-    height: min-content;
-    margin: 0 10px 0 2em;
- }
-
- .email,
- .github,
- .linkedin,
- .card-profile-description {
-     font-size: 2.5em;
- }
+    .card-profile-image {
+        margin-left: 30px;
+    }
 
 
 }

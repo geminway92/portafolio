@@ -34,7 +34,7 @@ a {
 
 .lightMode{
     background-color: var(--bg-color);
-    width: 100vh;
+    min-width: 100vh;
     transition: var(--transition);
 }
 
@@ -47,7 +47,7 @@ a {
 }
 
 .dark {
-    width: 100vh;
+    min-width: 100vh;
     color: var(--text-color); 
     background-color: var(--bg-color);
     transition: var(--transition);
@@ -70,3 +70,10 @@ a {
     --primary-color: hsl(46, 82%, 60%);
 }
  
+
+@media screen and (max-width: 1000px) {
+    .dark,
+    .lightMode {
+        min-width: 100vw;
+    }
+}

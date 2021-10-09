@@ -32,23 +32,38 @@ export default {
 </script>
 
 <style scoped >
+
+
 .card-hobbies {
     background-color: var(--bg-card-color);
-    width: 250px;
+    max-width: 90%;
+    margin:  auto;
     padding: 1em;
     border-radius: var(--border-radius);
     transition: var(--transition);    
-}
-
-.title {
-    font-size: 1.2rem;
-    margin-bottom: 15px;
 }
 
 .hobbie__image-container {
     width: 332px;
     margin-left: 0px;
 }
+
+@media screen and (min-width: 1166px) {
+
+    .card-hobbies {
+        width: 100%;
+        margin-top: 1em;
+    }
+
+    .title {
+        font-size: 1.2rem;
+        margin-bottom: 15px;
+    }
+
+    .hobbie__image-container {
+        width: 332px;
+        margin-left: 0px;
+    }
 
 .hobbie__title {
     font-size: 1em;
@@ -67,36 +82,6 @@ export default {
     border-radius: var(--border-radius);
 }
 
-@media screen and (max-width: 430px) {
- .card-hobbies {
-     width: 95%;
-     margin: auto;
- }   
-
- .title {
-     font-size: 3em;
- }
- 
- .hobbie__title {
-     font-size: 2.5em;
-    margin: 0 1em 1em 1em;
- }
-
- .hobbie__description {
-     font-size: 2.5em;
-    margin: 0 1em 1em 1em;
-
- }
- 
- .hobbie__image-container {
-    width: 100%;
- }
-
- .hobbie__image {
-     width: 100%;
-     height: 400px;
-     border-radius: 4em;
-     margin: 1em ;
- }
 }
+
 </style>

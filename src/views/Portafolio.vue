@@ -1,37 +1,41 @@
 <template>
-  
-    <div class="mode-color-container">
-    
-        <toggle :darkMode="darkMode" :textMode="textMode" @lightMode="lightMode"/>
-        <ToggleColor 
-        @changeColorBlue="changeColorBlue" 
-        @changeColorGreen="changeColorGreen" 
-        @changeColorPurple="changeColorPurple" 
-        @changeColorOrange="changeColorOrange"
-        @audioFocus="audioFocus"
-        :colorBlue="colorBlue" 
-        :colorGreen="colorGreen" 
-        :colorPurple="colorPurple" 
-        :colorOrange="colorOrange"                 
-    />
-        <Multilanguage
-        :titleLanguage="titleLanguage"
-        @audioFocus="audioFocus"
+    <div class="container-layaout">
+        <div class="header">
+        
+            <toggle :darkMode="darkMode" :textMode="textMode" @lightMode="lightMode"/>
+            <ToggleColor 
+            @changeColorBlue="changeColorBlue" 
+            @changeColorGreen="changeColorGreen" 
+            @changeColorPurple="changeColorPurple" 
+            @changeColorOrange="changeColorOrange"
+            @audioFocus="audioFocus"
+            :colorBlue="colorBlue" 
+            :colorGreen="colorGreen" 
+            :colorPurple="colorPurple" 
+            :colorOrange="colorOrange"                 
         />
-    </div>
-    
-    <main class="main">
-        <section class="column column--left">
-            <CardProfile @audioFocus="audioFocus"/>
-            <Hobbies />
-        </section>
-        <section class="column column--right">
-            <Skills />
-            <CardExperience />
-            <Projects  @audioFocus="audioFocus"  :totalProjects="totalProjects" @counterProjects="counterProjects"/>                    
+            <Multilanguage
+            :titleLanguage="titleLanguage"
+            @audioFocus="audioFocus"
+            />
+        </div>
+        <div class="wrapper">
 
-    </section>
-    </main>   
+            <div class="left-aside">
+                    <CardProfile @audioFocus="audioFocus"/>
+                    <Hobbies />
+            </div>
+            <main class="main">
+                    <Skills />
+                    <Projects  @audioFocus="audioFocus"  :totalProjects="totalProjects" @counterProjects="counterProjects"/>                    
+            </main>   
+            <div class="right-aside">
+                <CardExperience />
+
+            </div>
+        </div>
+
+    </div>
 </template>
 
 <script>
@@ -161,137 +165,86 @@ export default {
 
 <style>
 
-#app {
-    width: min-content;
-    height: min-content;
-    margin-bottom: 2em;
+ .container-layaout {
+    display: grid;
+    grid-template-rows: repeat(3, min-content); 
+    gap: 1em;
+    min-height: 100vh;
 }
-.mode-color-container {
+
+.header {
     display: flex;
-    justify-content: space-between;
     background-color: var(--bg-card-color);
     transition: var(--transition);
+    height: 70px;
+    gap: 1em;
+    width: 100vw;
+    position: fixed;
+    z-index: 1;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: min-content;
+    gap: 1em;
+    margin-top: 5.5em;
+}
+
+
+.main {
+    gap: 1em;
+    background-color: var(--bg-color);
+    transition: var(--transition);
+}
+
+
+@media screen and (max-width: 320px) {
+    .wrapper {
+        grid-template-columns: 85%;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .wrapper {
+        grid-template-columns: min-content 1fr;
+        grid-template-rows: 1410px;
+    }
+}
+
+@media screen and (min-width: 1166px) {
+
+     .container-layaout {
+        grid-template-rows: min-content;
+        min-height: 100vh;
+    }
+
+
+    .header {
+        min-width: 100%;
+        height: 80px;
+    }
+
+.wrapper {
+    max-width: 1600px;
+    grid-template-columns: min-content 1fr 400px;
+    gap: 1em;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .main {
     display: grid;
-    background-color: var(--bg-color);
-    transition: var(--transition);
-
-}
-
-.column {
-    display: grid;
-}
-
-@media screen and (max-width: 430px) {
     
-    .main {
-        width: 100%;
-        gap: 2em
-    }
+    grid-template-columns: 300px;
+    grid-template-rows: 400px;
+    grid: 1em;
+}
 
-    .mode-color-container {
-        height: min-content;
-        padding-bottom: 3em;
-    }
 
 }
 
 
-@media screen and (min-width: 700px) and (max-width: 1000px) {
-    .mode-color-container {
-        width: 100%;
-        height: 50px;
-    }
-    .main{
-        margin: 1.5em;
-        grid-template-columns: repeat(3, min-content);
-        justify-content: center;
-        gap: 0.6em;
-    }
-
-    .column--left {
-        grid-template-columns: min-content;
-        grid-template-rows: min-content;
-        align-items: flex-start;
-
-        gap: 1em;
-    
-    }   
-
-    .column--right{
-        grid-template-columns: 220px 230px;
-        grid-template-rows: 420px;
-        align-items: flex-start;
-        gap: .5em;
-    }
-
-}
-
-
-@media screen and (min-width: 1000px) and (max-width: 1600px) {
-    .mode-color-container {
-        width: 100%;
-        height: 50px;
-    }
-
-    .main{
-        margin: 1.5em;
-        grid-template-columns: repeat(3, min-content);
-        justify-content: center;
-        gap: 1em;
-    }
-
-    .column--left {
-        grid-template-columns: min-content;
-        grid-template-rows: min-content;
-        align-items: flex-start;
-
-        gap: 1em;
-    
-    }   
-
-    .column--right{
-        grid-template-columns: 300px 350px;
-        grid-template-rows: 420px;
-        align-items: flex-start;
-        gap: 1em;
-    }
-
-}
-
-
-@media screen and (min-width: 1600px) {
-    .mode-color-container {
-        width: 100vw;
-        height: 50px;
-    }
-
-    .main{
-        margin: 1.5em;
-        grid-template-columns: repeat(3, min-content);
-        justify-content: center;
-        gap: 1em;
-    }
-
-    .column--left {
-        grid-template-columns: min-content;
-        grid-template-rows: min-content;
-        align-items: flex-start;
-
-        gap: 1em;
-    
-    }   
-
-    .column--right{
-        grid-template-columns: 300px 350px;
-        grid-template-rows: 420px;
-        align-items: flex-start;
-        gap: 1em;
-    }
-
-}
 
 
 </style>

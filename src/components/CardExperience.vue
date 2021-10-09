@@ -72,16 +72,19 @@ export default {
 </script>
 
 <style scoped>
-.card--experience {
-  background-color: var(--bg-card-color);
+
+  .card--experience {
+   background-color: var(--bg-card-color);
   border-radius: var(--border-radius); 
   transition: var(--transition);
+  max-width: 100%;
+  padding: .1em 1em;
 }
 
 .experience {
   display: flex;
   padding: 1em .6em ;
-  margin: auto;
+  margin-bottom: 1em;
   border: 2px solid var(--primary-color);
   border-radius: var(--border-radius); 
 
@@ -90,6 +93,17 @@ export default {
 .experience_image {
   max-width: 30%;
   margin-right: 2em;
+}
+
+
+@media screen and (min-width: 1166px) {
+  .card--experience {
+    width: 300px;
+  }
+
+.experience {
+  padding: 1em .6em ;
+  margin-bottom: 1em;
 }
 
 .card__title {
@@ -108,27 +122,6 @@ export default {
   color: var(--primary-color);
 }
 
-@media screen and (max-width: 430px) {
-  .card--experience {
-   padding: .9em;
-   margin-top: 2em;
- }   
-
- .card__title {
-   font-size: 3em;
-   margin-bottom: .6em;
- }
-
- .experience {
-   width: 80%;
-   margin-top: 1em;
- }
-
- .experience__time,
- .experience__job {
-   font-size: 2.4em;
-   margin: .5em .1em;
- }
-
 }
+
 </style>

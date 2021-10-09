@@ -69,11 +69,16 @@ export default {
 </script>
 
 <style scoped>
+
+
 .skills {
     background-color: var(--bg-card-color);
-    padding: 1em ;
     border-radius: var(--border-radius); 
     transition: var(--transition);
+    padding: 1em ;
+    margin-bottom: 1em;
+    max-width: 90%;
+    margin: auto;
 }
 
 .skills h2 {
@@ -124,43 +129,14 @@ export default {
     transform: translateX(50%);
 }
 
-@media screen and (max-width: 430px) {
- .skills {
-    width: 95%;
-    margin: auto;
- }   
+@media screen and (min-width: 1166px) {
 
- .skills h2 {
-     font-size: 3em;
- }
-
- .skills_tech {
-     font-size: 2.5em;
-     margin-left: 0.3em;
- }
-
- .skills_bar,
- .skills_level {
-      width: 400px;
-      height: 20px;
-      top: 2.3em;
-  }
-
-    .skills_level {
-        position: relative;
-        top: 0px;
-        left: 11px;
+    .skills {
+        max-width: 100%;   
+        margin: 0;
+        height: min-content;
     }
- 
 
-}
-
-@media screen and (min-width: 700px) and (max-width: 1000px) {
-  .skills_bar, 
-  .skills_level {
-    width: 100px;
-    height: 8px;
-}
 
 }
 
