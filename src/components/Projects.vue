@@ -193,7 +193,7 @@ export default {
   position: relative;
   gap: 2em;
   width: 250px;
-  margin-left: 20%;
+  margin-left: 22%;
 }
 
 
