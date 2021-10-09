@@ -33,6 +33,7 @@ export default {
     display: flex;
     cursor: pointer;
     position: relative;
+    height: min-content;
     top: 1.5em; 
     left: 1em;   
 }
