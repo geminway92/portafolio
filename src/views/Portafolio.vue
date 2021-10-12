@@ -208,7 +208,7 @@ export default {
 
      .container-layaout {
         grid-template-rows: min-content 1fr;
-        grid-template-rows: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
         min-height: 100vh;
     }
 
