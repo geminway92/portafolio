@@ -134,7 +134,7 @@ export default {
 
     .skills {
         max-width: 100%;   
-        margin: 0;
+        margin-bottom: 1em;
         height: min-content;
     }
 

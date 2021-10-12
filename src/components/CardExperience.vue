@@ -79,6 +79,7 @@ export default {
   transition: var(--transition);
   max-width: 100%;
   padding: .1em 1em;
+  margin-top: 1em;
 }
 
 .card__title {

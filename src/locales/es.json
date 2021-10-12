@@ -26,7 +26,8 @@
     "text-pokemonPage": "Proyecto que simula una consola portátil. El juego consiste en que se te muestra un pokemon oculto y se te dan cuatro opciones, tienes que averiguar de qué pokemon se trata. Una vez que eliges el pokemon se te muestra la imagen. Empiezas con 3 vidas, si fallas 3 veces pierdes. Si aciertas sumas puntos, cuando acabaes las tres vidas puedes añadir tu nombre en la lista de clasificación. Consume el API PokéApi.",
     "text-questionme": "Divertida app  a la que le preguntas y te responde 'Sí', 'No' o 'Quizás'. Usa la API yesno.wtf. ¡Importante! para que te responda, debes terminar la pregunta con el símbolo '?'",
     "text-journal": "App de publicaciones, tiene una autentificación para acceder a ella. Se puede añadir, actualizar y borrar publicación, así como añadirle una imagen. ",
-    "text-blacklist": "Famoso juego de cartas, también llamado veintiuno. Es un juego propio de los casinos con una o más barajas inglesas de 52 cartas sin los comodines, que consiste en sumar un valor lo más próximo a 21 pero sin pasarse."
+    "text-blacklist": "Famoso juego de cartas, también llamado veintiuno. Es un juego propio de los casinos con una o más barajas inglesas de 52 cartas sin los comodines, que consiste en sumar un valor lo más próximo a 21 pero sin pasarse.",
+    "text-timedashboard": "Realización de un Tarjeta de registro de tiempo. Se usó un archivo JSON para obtener los datos de las horas según la frecuencia."
 
   }
 }

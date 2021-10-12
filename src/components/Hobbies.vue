@@ -43,11 +43,12 @@ export default {
 
 .card-hobbies {
     max-width: 90%;
-    margin:  auto;
     padding: 1em;
     background-color: var(--bg-card-color);
     border-radius: var(--border-radius);
     transition: var(--transition);    
+    position: relative;
+    bottom:  1em;
 }
 
 .title {
@@ -108,6 +109,7 @@ img.hobbie__image {
 
     .card-hobbies {
         width: 100%;
+        height: min-content;
         margin-top: 1em;
     }
 

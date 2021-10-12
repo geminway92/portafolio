@@ -98,9 +98,30 @@ import { defineAsyncComponent, ref } from 'vue';
 
           </div>
       </div>
-      
     </div>
+    <div class="projects">
+        <img src="../assets/images/photo-projects-timedashboard.jpg" alt="Pokemon Page project" class="project_image project_image--journal">
+      <div class="project_info">
 
+        <div class="project_tags ">
+          <span class="project_tag">#HTML</span>
+          <span class="project_tag">#CSS</span>
+          <span class="project_tag">#VUE</span>
+        </div>
+        <div class="project-description-container">
+          <h2 class="project__title">Time Dashboard</h2>
+          <p class="project__text">
+            {{ $t('Projects.text-timedashboard')}}
+          </p>
+
+        </div>
+          <div class="buttons">
+            <a href="https://time-dashboard-vue.netlify.app/" target="_blank" class="button button--primary" @click="this.$emit('audioFocus')">Demo</a>
+            <a href="https://github.com/geminway92/time-tracking-dashboard" class="button button--primary-ghost" target="_blank" @click="this.$emit('audioFocus')">Code</a>
+
+          </div>
+      </div>
+    </div>
   </div>
   
 </template>
@@ -130,7 +151,7 @@ export default {
   background-color: var(--bg-card-color);
   transition: var(--transition);
   padding: 1em;
-  margin: .5em 0;
+  margin-bottom: 1em;
   font-size: .8em;
 }
 
@@ -242,6 +263,7 @@ export default {
 
 .projects-container {
   display: grid;
+  min-width: 300px;
   align-items: flex-start;
   gap: 1em;
   margin: 2em 0;
@@ -270,7 +292,7 @@ export default {
 }
 
  .buttons {
-    margin-left: 20%;
+    margin-left: 35%;
   }
 
 }

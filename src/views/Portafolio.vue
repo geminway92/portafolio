@@ -23,23 +23,20 @@
 
             <div class="left-aside">
                     <CardProfile @audioFocus="audioFocus"/>
-                    <Hobbies />
+                    <Skills />  
+                    <CardExperience />
             </div>
-            <main class="main">
-                    <Skills />
-                    <Projects  @audioFocus="audioFocus"  :totalProjects="totalProjects" @counterProjects="counterProjects"/>                    
+            <main class="right-aside">
+                    <Projects  @audioFocus="audioFocus"  :totalProjects="totalProjects" @counterProjects="counterProjects"/>  
             </main>   
-            <div class="right-aside">
-                <CardExperience />
-
-            </div>
+                    <Hobbies />            
         </div>
 
     </div>
 </template>
 
 <script>
-import { defineAsyncComponent, ref } from 'vue';
+import { defineAsyncComponent } from 'vue';
 
 export default {
     name: 'Portafolio',
@@ -170,6 +167,7 @@ export default {
     grid-template-rows: repeat(3, min-content); 
     gap: 1em;
     min-height: 100vh;
+    margin: auto;
 }
 
 .header {
@@ -209,10 +207,10 @@ export default {
 @media screen and (min-width: 1166px) {
 
      .container-layaout {
-        grid-template-rows: min-content;
+        grid-template-rows: min-content 1fr;
+        grid-template-rows: repeat(3, 1fr);
         min-height: 100vh;
     }
-
 
     .header {
         min-width: 100%;
@@ -221,24 +219,41 @@ export default {
 
 .wrapper {
     max-width: 1600px;
-    grid-template-columns: min-content 1fr 400px;
+    grid-template-columns: min-content 50% 1fr;
     gap: 1em;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.main {
-    display: grid;
+    margin: 6em 1.5em ;
     
-    grid-template-columns: 300px;
-    grid-template-rows: 500px;
-    grid: 1em;
+}
+
+.left-aside {
+    grid-template-columns: min-content 1fr;
+    grid-template-rows: repeat(8, 1fr);
+}
+
+.right-aside {
+    position: relative;
+    bottom: 2.2em;
+    
 }
 
 
 }
 
 
+@media screen and (min-width: 1900px) {
+
+
+
+.wrapper {
+    max-width: 2200px;
+    grid-template-columns: min-content auto 300px;
+    gap: 1em;
+    margin: 6em 1.5em ;
+    
+}
+
+
+}
 
 
 </style>
