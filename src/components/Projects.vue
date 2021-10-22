@@ -5,6 +5,53 @@ import { defineAsyncComponent, ref } from 'vue';
       <h2 class="card_title">Projects ({{totalProjects}})</h2>
     </div>
     <div class="projects">
+        <img src="../assets/images/photo-projects-todo.png" alt="Pokemon Page project" class="project_image">
+      <div class="project_info">
+
+        <div class="project_tags">
+          <span class="project_tag">#HTML</span>
+          <span class="project_tag">#CSS</span>
+          <span class="project_tag">#JS</span>
+          <span class="project_tag">#VueJs</span>
+          <span class="project_tag">#Responsive</span>
+        </div>
+        <div class="project-description-container">
+          <h2 class="project__title">Todo</h2>
+          <p class="project__text">
+          {{ $t('Projects.text-todo')}}
+          </p>
+        </div>
+          <div class="buttons">
+            <a href="https://todo-vue-gemartin.netlify.app/#/todo" target="_blank" class="button button--primary" @click="this.$emit('audioFocus')">Demo</a>
+            <a href="https://github.com/geminway92/todo-vue" class="button button--primary-ghost" target="_blank" @click="this.$emit('audioFocus')">Code</a>
+
+          </div>
+      </div>
+    </div>
+    <div class="projects">
+        <img src="../assets/images/photo-projects-timedashboard.jpg" alt="Pokemon Page project" class="project_image project_image--journal">
+      <div class="project_info">
+
+        <div class="project_tags ">
+          <span class="project_tag">#HTML</span>
+          <span class="project_tag">#CSS</span>
+          <span class="project_tag">#VUE</span>
+        </div>
+        <div class="project-description-container">
+          <h2 class="project__title">Time Dashboard</h2>
+          <p class="project__text">
+            {{ $t('Projects.text-timedashboard')}}
+          </p>
+
+        </div>
+          <div class="buttons">
+            <a href="https://time-dashboard-vue.netlify.app/" target="_blank" class="button button--primary" @click="this.$emit('audioFocus')">Demo</a>
+            <a href="https://github.com/geminway92/time-tracking-dashboard" class="button button--primary-ghost" target="_blank" @click="this.$emit('audioFocus')">Code</a>
+
+          </div>
+      </div>
+    </div>
+    <div class="projects">
         <img src="../assets/images/photo-projects-pokemon.jpg" alt="Pokemon Page project" class="project_image">
       <div class="project_info">
 
@@ -25,29 +72,6 @@ import { defineAsyncComponent, ref } from 'vue';
             <a href="https://gameboy-pokemon.netlify.app/" target="_blank" class="button button--primary" @click="this.$emit('audioFocus')">Demo</a>
             <a href="https://github.com/geminway92/gamepokemon2" class="button button--primary-ghost" target="_blank" @click="this.$emit('audioFocus')">Code</a>
 
-          </div>
-      </div>
-    </div>
-    <div class="projects">
-        <img src="../assets/images/photo-projects-questionme.jpg" alt="Pokemon Page project" class="project_image">
-      <div class="project_info">
-
-        <div class="project_tags">
-          <span class="project_tag">#HTML</span>
-          <span class="project_tag">#CSS</span>
-          <span class="project_tag">#JS</span>
-          <span class="project_tag">#VueJs</span>
-        </div>
-        <div class="project-description-container">
-          <h2 class="project__title">Question me</h2>
-          <p class="project__text">
-            {{ $t('Projects.text-questionme')}}
-          </p>
-
-        </div>
-          <div class="buttons">
-            <a href="https://questionme.netlify.app/" target="_blank" class="button button--primary" @click="this.$emit('audioFocus')">Demo</a>
-            <a href="https://github.com/geminway92/questionme" class="button button--primary-ghost" target="_blank" @click="this.$emit('audioFocus')">Code</a>
           </div>
       </div>
     </div>
@@ -77,6 +101,30 @@ import { defineAsyncComponent, ref } from 'vue';
       </div>
     </div>
     <div class="projects">
+        <img src="../assets/images/photo-projects-questionme.jpg" alt="Pokemon Page project" class="project_image">
+      <div class="project_info">
+
+        <div class="project_tags">
+          <span class="project_tag">#HTML</span>
+          <span class="project_tag">#CSS</span>
+          <span class="project_tag">#JS</span>
+          <span class="project_tag">#VueJs</span>
+        </div>
+        <div class="project-description-container">
+          <h2 class="project__title">Question me</h2>
+          <p class="project__text">
+            {{ $t('Projects.text-questionme')}}
+          </p>
+
+        </div>
+          <div class="buttons">
+            <a href="https://questionme.netlify.app/" target="_blank" class="button button--primary" @click="this.$emit('audioFocus')">Demo</a>
+            <a href="https://github.com/geminway92/questionme" class="button button--primary-ghost" target="_blank" @click="this.$emit('audioFocus')">Code</a>
+          </div>
+      </div>
+    </div>
+    
+    <div class="projects">
         <img src="../assets/images/photo-projects-blacklist.jpg" alt="Pokemon Page project" class="project_image project_image--journal">
       <div class="project_info">
 
@@ -99,29 +147,7 @@ import { defineAsyncComponent, ref } from 'vue';
           </div>
       </div>
     </div>
-    <div class="projects">
-        <img src="../assets/images/photo-projects-timedashboard.jpg" alt="Pokemon Page project" class="project_image project_image--journal">
-      <div class="project_info">
-
-        <div class="project_tags ">
-          <span class="project_tag">#HTML</span>
-          <span class="project_tag">#CSS</span>
-          <span class="project_tag">#VUE</span>
-        </div>
-        <div class="project-description-container">
-          <h2 class="project__title">Time Dashboard</h2>
-          <p class="project__text">
-            {{ $t('Projects.text-timedashboard')}}
-          </p>
-
-        </div>
-          <div class="buttons">
-            <a href="https://time-dashboard-vue.netlify.app/" target="_blank" class="button button--primary" @click="this.$emit('audioFocus')">Demo</a>
-            <a href="https://github.com/geminway92/time-tracking-dashboard" class="button button--primary-ghost" target="_blank" @click="this.$emit('audioFocus')">Code</a>
-
-          </div>
-      </div>
-    </div>
+    
   </div>
   
 </template>
