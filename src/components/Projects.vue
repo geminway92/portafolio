@@ -22,7 +22,7 @@ import { defineAsyncComponent, ref } from 'vue';
           </p>
         </div>
           <div class="buttons">
-            <a href="https://todo-vue-gemartin.netlify.app/#/todo" target="_blank" class="button button--primary" @click="this.$emit('audioFocus')">Demo</a>
+            <a href="https://todo-vue-gemartin.netlify.app/#/" target="_blank" class="button button--primary" @click="this.$emit('audioFocus')">Demo</a>
             <a href="https://github.com/geminway92/todo-vue" class="button button--primary-ghost" target="_blank" @click="this.$emit('audioFocus')">Code</a>
 
           </div>
