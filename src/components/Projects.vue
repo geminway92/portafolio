@@ -26,7 +26,7 @@ import { defineAsyncComponent, ref } from 'vue';
         </div>
         <div class="buttons">
           <a
-            href="https://todo-vue-gemartin.netlify.app/#/"
+            href="https://todo-vue-gemartin.netlify.app/"
             target="_blank"
             class="button button--primary"
             @click="this.$emit('audioFocus')"
@@ -190,6 +190,44 @@ import { defineAsyncComponent, ref } from 'vue';
         </div>
       </div>
     </div>
+
+    <div class="projects">
+      <img
+        src="../assets/images/photo-projects-gameboy-eoi.png"
+        alt="Pokemon Page project"
+        class="project_image project_image--journal"
+      />
+      <div class="project_info">
+        <div class="project_tags ">
+          <span class="project_tag">#HTML</span>
+          <span class="project_tag">#CSS</span>
+        </div>
+        <div class="project-description-container">
+          <h2 class="project__title">Gameboy-EOI</h2>
+          <p class="project__text">
+            {{ $t("Projects.text-gameboy-eoi") }}
+          </p>
+        </div>
+        <div class="buttons">
+          <a
+            href="https://codepen.io/geminway92/pen/LYzLOQp"
+            target="_blank"
+            class="button button--primary"
+            @click="this.$emit('audioFocus')"
+            >Demo</a
+          >
+          <a
+            href="https://github.com/geminway92/gameboy-anec"
+            class="button button--primary-ghost"
+            target="_blank"
+            @click="this.$emit('audioFocus')"
+            >Code</a
+          >
+        </div>
+      </div>
+    </div>
+
+
     <div class="projects">
       <img
         src="../assets/images/photo-projects-questionme.jpg"
@@ -265,6 +303,7 @@ import { defineAsyncComponent, ref } from 'vue';
       </div>
     </div>
   </div>
+
 </template>
 
 <script>
@@ -310,7 +349,7 @@ export default {
   width: 100%;
   display: flex;
   margin-bottom: 10px;
-  justify-content: start;
+  justify-content: flex-start;
 }
 
 .project_tag {

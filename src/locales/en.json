@@ -28,6 +28,8 @@
     "text-blacklist": "Famous card game, also called twenty-one. It is a casino game with one or more English decks of 52 cards without jokers, which consists of adding a value as close to 21 as possible without going over.",
     "text-timedashboard": "Realization of a timecard. A JSON file was used to obtain the data of the hours according to frequency.",
     "text-todo": "App based on the design of a Kiran Kumar figma, except for some changes or additions I have made. It is fully functional: registrations, login, reset password, change profile picture, add new tasks.",
-    "text-pokeball": "This is a simple project that puts css skills into practice. It's a pokeball with an infinite transition.."
+    "text-pokeball": "This is a simple project that puts css skills into practice. It's a pokeball with an infinite transition..",
+    "text-gameboy-eoi": "Simple project developed in the EOI course where we create a css copy from an image"
+
   }
 }

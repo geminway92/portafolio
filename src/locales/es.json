@@ -28,6 +28,7 @@
     "text-blacklist": "Famoso juego de cartas, también llamado veintiuno. Es un juego propio de los casinos con una o más barajas inglesas de 52 cartas sin los comodines, que consiste en sumar un valor lo más próximo a 21 pero sin pasarse.",
     "text-timedashboard": "Realización de un Tarjeta de registro de tiempo. Se usó un archivo JSON para obtener los datos de las horas según la frecuencia.",
     "text-todo": "App basada en el diseño de un figma de Kiran Kumar, a excepción de algunos cambios o añadiduras que he hecho. Es totalmente funcional: registros, login, restablecer contraseña, cambiar foto de perfil, añadir nuevas tareas.",
-    "text-pokeball": "Es un sencillo proyecto que pone en práctica las habilidades con css. Es una pokeball con un transition infinito."
+    "text-pokeball": "Es un sencillo proyecto que pone en práctica las habilidades con css. Es una pokeball con un transition infinito.",
+    "text-gameboy-eoi": "Sencillo proyecto desarrollado en el curso de la EOI donde creamos a partir de una imagen una copia en css"
   }
 }
