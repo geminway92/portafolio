@@ -1,10 +1,10 @@
 <template>
-  <img src="../assets/logos/Logo-gema.png" >
+  <h1>Contactar</h1>
 </template>
 
 <script>
 export default {
-
+  name: 'Contact'
 }
 </script>
 

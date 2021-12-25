@@ -1,19 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=PT+Mono&family=Press+Start+2P&display=swap');
 @import '../../node_modules/@fortawesome/fontawesome-free/css/all.css';
 
 :root{
-    --primary-color: #3182ed;
-    --text-color: #4f4f4f;
     --headings-color: #919191;
     --bg-color: #EDEFF1;
-    --bg-card-color: #fafafa;
-    --transition: color 0.1s, background-color 0.2s ease-in-out;
-    --box-shadow: 5px 0 15px rgb(0 0 0 / 0.2);
-    --border-radius: 0.4em;
 }
 
 body{
     background: var(--bg-color);
     margin: 0;
+
 }
 
