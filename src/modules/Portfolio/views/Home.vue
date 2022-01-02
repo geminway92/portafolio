@@ -1,3 +1,4 @@
+import { defineAsyncComponent } from 'vue';
 <template>
   <main>
     <div class="container-introduction">
@@ -94,7 +95,7 @@ main {
 }
 
 .container-section-formation{
-  position: absolute;
+  /* position: absolute; */
   bottom: 5em;
   width: 100%;
   display: flex;
@@ -138,5 +139,70 @@ main {
   font-weight: normal;
   text-align: center;
   padding: .3em 0;
+}
+
+@media screen and (max-width: 885px) {
+
+.container-introduction {
+  width: 100%;
+  flex-direction: column;
+  height: min-content;
+}
+
+.container-img {
+  width: 300px;
+}
+
+.container-section-formation{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container-intro {
+  transform: translate(0);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container-formation {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container-intro h1, .container-formation h2 {
+  text-align: center;
+}
+.container-formation h2 {
+  font-size: 1.4em;
+}
+
+.container-intro p, .container-formation p {
+  width: 90%;
+  line-height: 35px;
+}
+
+.container-formation p {
+  margin: 10px 0;
+}
+
+.container-skills {
+  width: 100%;
+  place-content: center;
+  padding: 1em 0;
+}
+
+.skill  {
+  border: #919191 2px solid;
+  border-radius: 10px;
+  width: 100%;
+  height: min-content;
+}
+
+
 }
 </style>

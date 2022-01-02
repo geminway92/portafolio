@@ -10,7 +10,7 @@ import { defineAsyncComponent } from "vue";
 
 export default {
   components: {
-    Navbar: defineAsyncComponent(() => import(/*webpackChunkName: "Navbar*/ './modules/Portfolio/components/Navbar.vue'))
+    Navbar: defineAsyncComponent(() => import(/*webpackChunkName: "Navbar"*/ './modules/Portfolio/components/Navbar.vue'))
   },
   name: 'app',
 

@@ -76,4 +76,60 @@ nav a {
   padding: 1em 2em;
   border-radius: 15px;
 }
+
+@media screen and (max-width: 500px) {
+
+header {
+  height: 350px;
+}
+
+.container-navbar {
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.container-logo {
+  width: 100%;
+  justify-content: center;
+}
+
+.container-logo img {
+  width: 15%;
+}
+
+.container-logo a {
+  font-size: 18px;
+  width: 200px;
+}
+
+nav {
+  flex-direction: column;
+  height: 80%;
+
+}
+
+}
+
+@media screen and (min-width: 500px) and (max-width: 885px) {
+  header{
+    width: 100%;
+    height: 170px;
+  }
+
+  .container-navbar{
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .container-logo{
+    width:min-content;
+    height: 100px;
+  }
+
+  nav{
+    width: 100%;
+  }
+}
 </style>
