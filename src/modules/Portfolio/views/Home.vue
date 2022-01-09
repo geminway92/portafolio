@@ -95,11 +95,11 @@ main {
 }
 
 .container-section-formation{
-  /* position: absolute; */
   bottom: 5em;
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .container-formation {
@@ -204,5 +204,11 @@ main {
 }
 
 
+}
+
+@media screen and (min-width: 500px){
+  .container-img{
+    padding: 2em;
+  }
 }
 </style>
