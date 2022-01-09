@@ -7,7 +7,9 @@ import { defineAsyncComponent } from 'vue';
       </div>
       <div class="container-intro">
       <h1>FRONTEND DEVELOPED</h1>
-      <p>Soy una persona flexible, disciplinada, comunicativa y responsable. Con capacidad de integración y grandes deseos de aprendizaje.</p>
+      <p>Deseo aportar valor mediante la mejora continua y el aprendizaje.
+Soy Flexible y adaptable, responsable y disciplinada.
+Comunicativa, capaz de generar armonía y consenso, generando sentimiento de pertenencia en los grupos con los que colaboro.</p>
       </div>
     </div>
     <div class="container-section-formation">

@@ -4,12 +4,10 @@
 
         <div class="container-logo">
           <img src="../../../assets/logos/Logo-gema.svg" alt="">
-          <router-link :to="{name: 'Home'}">Gema Martín</router-link>
         </div>
 
         <nav>
-          <a href="https://www.linkedin.com/in/gemart%C3%ADn/" target="_blank">Linkelind</a>
-          <a href="https://github.com/geminway92" target="_blank">GitHub</a>
+          <router-link :to="{name: 'Home'}">Gema Martín</router-link>
           <router-link :to="{name: 'Contact'}">Contactar</router-link>
           <router-link :to="{name: 'Projects'}" class="projects">Proyectos</router-link>
         </nav>
@@ -39,7 +37,7 @@ header {
 }
 
 .container-logo {
-  width: 300px;
+  width: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -86,16 +84,14 @@ header {
 .container-navbar {
   flex-direction: column;
   align-items: center;
-  height: 100%;
 }
 
 .container-logo {
-  width: 100%;
-  justify-content: center;
+  align-self: flex-start;
 }
 
 .container-logo img {
-  width: 15%;
+  width: 70%;
 }
 
 .container-logo a {
@@ -112,21 +108,6 @@ nav {
 }
 
 @media screen and (min-width: 500px) and (max-width: 885px) {
-  header{
-    width: 100%;
-    height: 170px;
-  }
-
-  .container-navbar{
-    width: 100%;
-    height: 100%;
-    flex-direction: column;
-    align-items: center;
-  }
-  .container-logo{
-    width:min-content;
-    height: 100px;
-  }
 
   nav{
     width: 100%;
