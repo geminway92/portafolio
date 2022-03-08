@@ -42,6 +42,45 @@ import { defineAsyncComponent, ref } from 'vue';
         </div>
       </div>
     </div>
+
+    <div class="projects">
+      <img
+        src="../assets/images/photo-projects-cultura-y-ocio.png"
+        alt="Pokemon Page project"
+        class="project_image project_image--journal"
+      />
+      <div class="project_info">
+        <div class="project_tags ">
+          <span class="project_tag">#HTML</span>
+          <span class="project_tag">#CSS</span>
+          <span class="project_tag">#JS</span>
+          <span class="project_tag">#Vue</span>
+        </div>
+        <div class="project-description-container">
+          <h2 class="project__title">Cultura y Ocio</h2>
+          <p class="project__text">
+            {{ $t("Projects.text-culturayocio") }}
+          </p>
+        </div>
+        <div class="buttons">
+          <a
+            href="https://cultura-y-ocio.netlify.app/#/"
+            target="_blank"
+            class="button button--primary"
+            @click="this.$emit('audioFocus')"
+            >Demo</a
+          >
+          <a
+            href="https://github.com/geminway92/cultura-y-ocio-malaga"
+            class="button button--primary-ghost"
+            target="_blank"
+            @click="this.$emit('audioFocus')"
+            >Code</a
+          >
+        </div>
+      </div>
+    </div>
+
     <div class="projects">
       <img
         src="../assets/images/photo-projects-timedashboard.jpg"

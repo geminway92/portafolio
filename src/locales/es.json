@@ -29,6 +29,7 @@
     "text-timedashboard": "Realización de un Tarjeta de registro de tiempo. Se usó un archivo JSON para obtener los datos de las horas según la frecuencia.",
     "text-todo": "App basada en el diseño de un figma de Kiran Kumar, a excepción de algunos cambios o añadiduras que he hecho. Es totalmente funcional: registros, login, restablecer contraseña, cambiar foto de perfil, añadir nuevas tareas.",
     "text-pokeball": "Es un sencillo proyecto que pone en práctica las habilidades con css. Es una pokeball con un transition infinito.",
-    "text-gameboy-eoi": "Sencillo proyecto desarrollado en el curso de la EOI donde creamos a partir de una imagen una copia en css"
+    "text-gameboy-eoi": "Sencillo proyecto desarrollado en el curso de la EOI donde creamos a partir de una imagen una copia en css",
+    "text-culturayocio": "Proyecto que tiene como finalidad crear y ver los eventos que hay en Málaga. Está pensando para poner en práctica petición con axios, usar la CRUD alojada la base de dato en firebase y la autenticación de usuario.Se añadió un calendario y es funcional tanto si eres usuario registrado o entras como anónimo, en este último caso estará guardado en localstorage."
   }
 }
