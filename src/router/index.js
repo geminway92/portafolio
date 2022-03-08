@@ -14,9 +14,8 @@ const routes = [
       component: () => import(/*webpackChunkName: "Projects" */ '../modules/Portfolio/views/Projects.vue')
    },
    {
-      path: '/contact',
-      name: 'Contact',
-      component: () => import(/*webpackChunkName: "Projects" */ '../modules/Portfolio/views/Contact.vue')
+      path: '/:pathMatch(.*)*',
+      redirect: '/'
    }
 ]
 const router = createRouter({
