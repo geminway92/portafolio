@@ -167,6 +167,7 @@ export default {
 .container-layaout {
   display: grid;
   grid-template-rows: repeat(3, min-content);
+  place-content: center;
   gap: 1em;
   min-height: 100vh;
   margin: auto;
