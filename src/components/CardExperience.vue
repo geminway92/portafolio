@@ -102,9 +102,6 @@ export default {
 
 
 @media screen and (min-width: 1166px) {
-  .card--experience {
-    width: 300px;
-  }
 
 .experience {
   padding: 1em .6em ;
