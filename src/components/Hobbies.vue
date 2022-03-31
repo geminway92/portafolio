@@ -46,7 +46,7 @@ export default {
     padding: 1em;
     background-color: var(--bg-card-color);
     border-radius: var(--border-radius);
-    transition: var(--transition);    
+    transition: var(--transition);
     position: relative;
     bottom:  1em;
 }
@@ -61,7 +61,7 @@ export default {
     height: min-content;
     margin: auto;
     background-color: var(--bg-card-color);
-    transition: var(--transition);    
+    transition: var(--transition);
 }
 
 img.hobbie__image {
@@ -102,7 +102,7 @@ img.hobbie__image {
         margin: 0.9em 0;
     }
 
-    
+
 }
 
 @media screen and (min-width: 1166px) {

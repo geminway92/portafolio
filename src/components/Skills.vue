@@ -1,71 +1,25 @@
 <template>
   <div class="skills">
       <h2 class="skills_title">Front End</h2>
-          <div class="skills_item">
-              <p class="skills_tech">HTML/CSS</p>
+          <div v-for="skill in skillsArray" :key="skill" class="skills_item">
+              <p class="skills_tech">{{skill}}</p>
               <div class="skills_bar">
                   <div class="skills_level skills_level--50"></div>
               </div>
-              
+
             </div>
-            <div class="skills_item">
-              <p class="skills_tech">JavaScript</p>
-              <div class="skills_bar">
-                  <div class="skills_level skills_level--40"></div>
-              </div>
-              
-            </div>
-            <div class="skills_item">
-              <p class="skills_tech">VueJS</p>
-              <div class="skills_bar">
-                  <div class="skills_level skills_level--50"></div>
-              </div>
-              
-            </div>
-            <div class="skills_item">
-              <p class="skills_tech">Git</p>
-              <div class="skills_bar">
-                  <div class="skills_level skills_level--25"></div>
-              </div>
-              
-            </div>
-            <div class="skills_item">
-              <p class="skills_tech">TDD</p>
-              <div class="skills_bar">
-                  <div class="skills_level skills_level--25"></div>
-              </div>
-            </div>
-            <div class="skills_item">
-              <p class="skills_tech">Axios</p>
-              <div class="skills_bar">
-                  <div class="skills_level skills_level--35"></div>
-              </div>
-            </div>
-            <div class="skills_item">
-              <p class="skills_tech">Bootstrap</p>
-              <div class="skills_bar">
-                  <div class="skills_level skills_level--40"></div>
-              </div>
-            </div>
-            <div class="skills_item">
-              <p class="skills_tech">Quasar</p>
-              <div class="skills_bar">
-                  <div class="skills_level skills_level--25"></div>
-              </div>
-            </div>
-            <div class="skills_item">
-              <p class="skills_tech">i18n</p>
-              <div class="skills_bar">
-                  <div class="skills_level skills_level--25"></div>
-              </div>
-            </div>
+
   </div>
 </template>
 
 <script>
 export default {
-
-} 
+    data(){
+        return{
+            skillsArray: ['HTML/CSS', 'JavaScript', 'VueJS', 'Vuex', 'Vue Router', 'Vue Utils', 'Git', 'Axios', 'Tailwind CSS', 'Bootstrap', 'Bulma', 'Jest', 'Testing Library', 'Storybook', 'I8n']
+        }
+    }
+}
 </script>
 
 <style scoped>
@@ -73,12 +27,13 @@ export default {
 
 .skills {
     background-color: var(--bg-card-color);
-    border-radius: var(--border-radius); 
+    border-radius: var(--border-radius);
     transition: var(--transition);
     padding: 1em ;
     margin-bottom: 1em;
     max-width: 90%;
     margin: auto;
+    height: min-content;
 }
 
 .skills h2 {
@@ -103,7 +58,7 @@ export default {
     width: 175px;
     height: 8px;
     background-color: #888;
-    border-radius: var(--border-radius); 
+    border-radius: var(--border-radius);
     overflow: hidden;
 }
 
@@ -133,7 +88,7 @@ export default {
 @media screen and (min-width: 1166px) {
 
     .skills {
-        max-width: 100%;   
+        max-width: 100%;
         margin-bottom: 1em;
         height: min-content;
     }

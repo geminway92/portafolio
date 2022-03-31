@@ -34,7 +34,6 @@ a {
 
 .lightMode{
     background-color: var(--bg-color);
-    min-width: 100vh;
     transition: var(--transition);
 }
 
@@ -47,8 +46,7 @@ a {
 }
 
 .dark {
-    min-width: 100vh;
-    color: var(--text-color); 
+    color: var(--text-color);
     background-color: var(--bg-color);
     transition: var(--transition);
 }
@@ -56,24 +54,17 @@ a {
 .color-item--blue {
     --primary-color: hsl(214, 84%, 56%);
 }
- 
+
  .color-item--green {
     --primary-color: hsl(150, 84%, 56%);
 
  }
- 
+
  .color-item--purple {
     --primary-color: hsl(276, 84%, 56%);
 }
- 
+
  .color-item--orange {
     --primary-color: hsl(46, 82%, 60%);
 }
- 
 
-@media screen and (max-width: 1000px) {
-    .dark,
-    .lightMode {
-        min-width: 100vw;
-    }
-}
