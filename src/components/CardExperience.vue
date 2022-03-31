@@ -10,7 +10,7 @@
             <div class="experience__info">
               <p
                 class="experience__time"
-              > 
+              >
                 {{ $t('CardExperience.date-jalon')}}
               </p>
               <h3
@@ -19,7 +19,7 @@
               {{ $t('CardExperience.job-jalon')}}
 
               </h3>
-              
+
             </div>
           </div>
           <div class="experience">
@@ -39,7 +39,7 @@
               >
                 {{ $t('CardExperience.job-campana')}}
               </h3>
-              
+
             </div>
           </div>
           <div class="experience">
@@ -59,7 +59,7 @@
               >
                 {{ $t('CardExperience.job-txoco')}}
               </h3>
-              
+
             </div>
           </div>
         </div>
@@ -75,9 +75,8 @@ export default {
 
   .card--experience {
    background-color: var(--bg-card-color);
-  border-radius: var(--border-radius); 
+  border-radius: var(--border-radius);
   transition: var(--transition);
-  max-width: 100%;
   padding: .1em 1em;
   margin-top: 1em;
 }
@@ -92,7 +91,7 @@ export default {
   padding: 1em .6em ;
   margin-bottom: 1em;
   border: 2px solid var(--primary-color);
-  border-radius: var(--border-radius); 
+  border-radius: var(--border-radius);
 
 }
 

@@ -31,8 +31,6 @@ export default {
     transition: var(--transition);
     padding: 1em ;
     margin-bottom: 1em;
-    max-width: 90%;
-    margin: auto;
     height: min-content;
 }
 

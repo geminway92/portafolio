@@ -12,7 +12,9 @@
     --border-radius: 0.4em;
 }
 
-
+html, body{
+    width: 100%;
+}
 body {
     margin: 0;
     font-family: 'Open Sans', sans-serif;

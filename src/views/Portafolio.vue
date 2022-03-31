@@ -1,5 +1,6 @@
 <template>
   <div class="container-layaout">
+
     <div class="header">
       <toggle
         :darkMode="darkMode"
@@ -32,7 +33,7 @@
           @counterProjects="counterProjects"
         />
       </main>
-      <Hobbies />
+
     </div>
   </div>
 </template>
@@ -55,7 +56,6 @@ export default {
     ),
     Skills: defineAsyncComponent(() => import("../components/Skills.vue")),
     Projects: defineAsyncComponent(() => import("../components/Projects.vue")),
-    Hobbies: defineAsyncComponent(() => import("../components/Hobbies.vue")),
     Multilanguage: defineAsyncComponent(() =>
       import("../components/Multilanguage.vue")
     ),
@@ -164,14 +164,6 @@ export default {
 </script>
 
 <style>
-.container-layaout {
-  display: grid;
-  grid-template-rows: repeat(3, min-content);
-  place-content: center;
-  gap: 1em;
-  min-height: 100vh;
-  margin: auto;
-}
 
 .header {
   display: flex;
@@ -181,6 +173,7 @@ export default {
   gap: 1em;
   width: 100vw;
   position: fixed;
+  top: 0;
   z-index: 1;
 }
 
@@ -206,11 +199,6 @@ export default {
 }
 
 @media screen and (min-width: 1166px) {
-  .container-layaout {
-    grid-template-rows: min-content 1fr;
-    grid-template-rows: repeat(2, 1fr);
-    min-height: 100vh;
-  }
 
   .header {
     min-width: 100%;
@@ -218,15 +206,13 @@ export default {
   }
 
   .wrapper {
-    max-width: 1600px;
-    grid-template-columns: min-content 50% 1fr;
-    gap: 1em;
     margin: 6em 1.5em;
   }
 
   .left-aside {
     grid-template-columns: min-content 1fr;
     grid-template-rows: repeat(8, 1fr);
+
   }
 
   .right-aside {
@@ -238,9 +224,9 @@ export default {
 @media screen and (min-width: 1900px) {
   .wrapper {
     max-width: 2200px;
-    grid-template-columns: min-content auto 300px;
+    grid-template-columns: min-content 1fr;
     gap: 1em;
-    margin: 6em 1.5em;
+
   }
 }
 </style>

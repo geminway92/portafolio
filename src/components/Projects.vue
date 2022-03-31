@@ -1,4 +1,3 @@
-import { defineAsyncComponent, ref } from 'vue';
 <template>
   <div class="projects-container">
     <div class="projects__title-projects">
