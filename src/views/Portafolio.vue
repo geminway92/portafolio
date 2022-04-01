@@ -1,5 +1,5 @@
 <template>
-  <div class="container-layaout">
+  <div class="container-layout">
 
     <div class="header">
       <toggle
@@ -29,8 +29,6 @@
       <main class="right-aside">
         <Projects
           @audioFocus="audioFocus"
-          :totalProjects="totalProjects"
-          @counterProjects="counterProjects"
         />
       </main>
 
@@ -72,7 +70,6 @@ export default {
       colorOrange: false,
       srcFocusAudio: require("../assets/audios/audio-click.mp3"),
       focusAudio: new Audio(),
-      totalProjects: 0,
     };
   },
   methods: {
@@ -143,9 +140,6 @@ export default {
       const lang = this.$i18n.locale;
     },
 
-    counterProjects() {
-      this.totalProjects = document.querySelectorAll(".project_info").length;
-    },
 
     watchScreenWidth() {
       if (window.screen.width >= 700) {
@@ -164,6 +158,10 @@ export default {
 </script>
 
 <style>
+.container-layout{
+  display: flex;
+  justify-content: center;
+}
 
 .header {
   display: flex;

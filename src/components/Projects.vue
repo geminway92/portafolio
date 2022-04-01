@@ -1,38 +1,35 @@
 <template>
   <div class="projects-container">
     <div class="projects__title-projects">
-      <h2 class="card_title">Projects ({{ totalProjects }})</h2>
+      <h2 class="card_title">Projects ({{ this.projects.length }})</h2>
     </div>
-    <div class="projects">
+    <div v-for="project in projects" :key="project.name" class="projects">
       <img
-        src="../assets/images/photo-projects-todo.png"
-        alt="Pokemon Page project"
+        :src="getImage(project.image)"
+        :alt="project.name"
         class="project_image"
       />
       <div class="project_info">
         <div class="project_tags">
-          <span class="project_tag">#HTML</span>
-          <span class="project_tag">#CSS</span>
-          <span class="project_tag">#JS</span>
-          <span class="project_tag">#VueJs</span>
-          <span class="project_tag">#Responsive</span>
+          <span  v-for="tag in project.tags" :key="tag" class="project_tag">{{tag}}</span>
+
         </div>
         <div class="project-description-container">
-          <h2 class="project__title">Todo</h2>
+          <h2 class="project__title">{{project.name}}</h2>
           <p class="project__text">
-            {{ $t("Projects.text-todo") }}
+            {{ $t(project.descriptions) }}
           </p>
         </div>
         <div class="buttons">
           <a
-            href="https://todo-vue-gemartin.netlify.app/"
+            :href="project.links[0].demo"
             target="_blank"
             class="button button--primary"
             @click="this.$emit('audioFocus')"
             >Demo</a
           >
           <a
-            href="https://github.com/geminway92/todo-vue"
+            :href="project.links[0].code"
             class="button button--primary-ghost"
             target="_blank"
             @click="this.$emit('audioFocus')"
@@ -42,320 +39,34 @@
       </div>
     </div>
 
-    <div class="projects">
-      <img
-        src="../assets/images/photo-projects-cultura-y-ocio.png"
-        alt="Pokemon Page project"
-        class="project_image project_image--journal"
-      />
-      <div class="project_info">
-        <div class="project_tags ">
-          <span class="project_tag">#HTML</span>
-          <span class="project_tag">#CSS</span>
-          <span class="project_tag">#JS</span>
-          <span class="project_tag">#Vue</span>
-        </div>
-        <div class="project-description-container">
-          <h2 class="project__title">Cultura y Ocio</h2>
-          <p class="project__text">
-            {{ $t("Projects.text-culturayocio") }}
-          </p>
-        </div>
-        <div class="buttons">
-          <a
-            href="https://cultura-y-ocio.netlify.app/#/"
-            target="_blank"
-            class="button button--primary"
-            @click="this.$emit('audioFocus')"
-            >Demo</a
-          >
-          <a
-            href="https://github.com/geminway92/cultura-y-ocio-malaga"
-            class="button button--primary-ghost"
-            target="_blank"
-            @click="this.$emit('audioFocus')"
-            >Code</a
-          >
-        </div>
-      </div>
-    </div>
-
-    <div class="projects">
-      <img
-        src="../assets/images/photo-projects-timedashboard.jpg"
-        alt="Pokemon Page project"
-        class="project_image project_image--journal"
-      />
-      <div class="project_info">
-        <div class="project_tags ">
-          <span class="project_tag">#HTML</span>
-          <span class="project_tag">#CSS</span>
-          <span class="project_tag">#VUE</span>
-        </div>
-        <div class="project-description-container">
-          <h2 class="project__title">Time Dashboard</h2>
-          <p class="project__text">
-            {{ $t("Projects.text-timedashboard") }}
-          </p>
-        </div>
-        <div class="buttons">
-          <a
-            href="https://time-dashboard-vue.netlify.app/"
-            target="_blank"
-            class="button button--primary"
-            @click="this.$emit('audioFocus')"
-            >Demo</a
-          >
-          <a
-            href="https://github.com/geminway92/time-tracking-dashboard"
-            class="button button--primary-ghost"
-            target="_blank"
-            @click="this.$emit('audioFocus')"
-            >Code</a
-          >
-        </div>
-      </div>
-    </div>
-    <div class="projects">
-      <img
-        src="../assets/images/photo-projects-pokemon.jpg"
-        alt="Pokemon Page project"
-        class="project_image"
-      />
-      <div class="project_info">
-        <div class="project_tags">
-          <span class="project_tag">#HTML</span>
-          <span class="project_tag">#CSS</span>
-          <span class="project_tag">#JS</span>
-          <span class="project_tag">#VueJs</span>
-          <span class="project_tag">#Responsive</span>
-        </div>
-        <div class="project-description-container">
-          <h2 class="project__title">Pokemon Page</h2>
-          <p class="project__text">
-            {{ $t("Projects.text-pokemonPage") }}
-          </p>
-        </div>
-        <div class="buttons">
-          <a
-            href="https://gameboy-pokemon.netlify.app/"
-            target="_blank"
-            class="button button--primary"
-            @click="this.$emit('audioFocus')"
-            >Demo</a
-          >
-          <a
-            href="https://github.com/geminway92/gamepokemon2"
-            class="button button--primary-ghost"
-            target="_blank"
-            @click="this.$emit('audioFocus')"
-            >Code</a
-          >
-        </div>
-      </div>
-    </div>
-    <div class="projects">
-      <img
-        src="../assets/images/photo-projects-journal.jpg"
-        alt="Pokemon Page project"
-        class="project_image project_image--journal"
-      />
-      <div class="project_info">
-        <div class="project_tags">
-          <span class="project_tag">#HTML</span>
-          <span class="project_tag">#CSS</span>
-          <span class="project_tag">#SCSS</span>
-          <span class="project_tag">#JS</span>
-          <span class="project_tag">#VueJs</span>
-          <span class="project_tag">#Responsive</span>
-        </div>
-        <div class="project-description-container">
-          <h2 class="project__title">Journal</h2>
-          <p class="project__text">
-            {{ $t("Projects.text-journal") }}
-          </p>
-        </div>
-        <div class="buttons">
-          <a
-            href="https://journal-vue.netlify.app/"
-            target="_blank"
-            class="button button--primary"
-            @click="this.$emit('audioFocus')"
-            >Demo</a
-          >
-          <a
-            href="https://github.com/geminway92/vue-journal-vuex"
-            class="button button--primary-ghost"
-            target="_blank"
-            @click="this.$emit('audioFocus')"
-            >Code</a
-          >
-        </div>
-      </div>
-    </div>
-    <div class="projects">
-      <img
-        src="../assets/images/photo-projects-pokeball.png"
-        alt="Pokemon Page project"
-        class="project_image"
-      />
-      <div class="project_info">
-        <div class="project_tags">
-          <span class="project_tag">#HTML</span>
-          <span class="project_tag">#CSS</span>
-        </div>
-        <div class="project-description-container">
-          <h2 class="project__title">Pokeball</h2>
-          <p class="project__text">
-            {{ $t("Projects.text-pokeball") }}
-          </p>
-        </div>
-        <div class="buttons">
-          <a
-            href="https://codepen.io/geminway92/pen/porGdpq/"
-            target="_blank"
-            class="button button--primary"
-            @click="this.$emit('audioFocus')"
-            >Demo</a
-          >
-          <a
-            href="https://github.com/geminway92/pokeball"
-            class="button button--primary-ghost"
-            target="_blank"
-            @click="this.$emit('audioFocus')"
-            >Code</a
-          >
-        </div>
-      </div>
-    </div>
-
-    <div class="projects">
-      <img
-        src="../assets/images/photo-projects-gameboy-eoi.png"
-        alt="Pokemon Page project"
-        class="project_image project_image--journal"
-      />
-      <div class="project_info">
-        <div class="project_tags ">
-          <span class="project_tag">#HTML</span>
-          <span class="project_tag">#CSS</span>
-        </div>
-        <div class="project-description-container">
-          <h2 class="project__title">Gameboy-EOI</h2>
-          <p class="project__text">
-            {{ $t("Projects.text-gameboy-eoi") }}
-          </p>
-        </div>
-        <div class="buttons">
-          <a
-            href="https://codepen.io/geminway92/pen/LYzLOQp"
-            target="_blank"
-            class="button button--primary"
-            @click="this.$emit('audioFocus')"
-            >Demo</a
-          >
-          <a
-            href="https://github.com/geminway92/gameboy-anec"
-            class="button button--primary-ghost"
-            target="_blank"
-            @click="this.$emit('audioFocus')"
-            >Code</a
-          >
-        </div>
-      </div>
-    </div>
-
-
-    <div class="projects">
-      <img
-        src="../assets/images/photo-projects-questionme.jpg"
-        alt="Pokemon Page project"
-        class="project_image"
-      />
-      <div class="project_info">
-        <div class="project_tags">
-          <span class="project_tag">#HTML</span>
-          <span class="project_tag">#CSS</span>
-          <span class="project_tag">#JS</span>
-          <span class="project_tag">#VueJs</span>
-        </div>
-        <div class="project-description-container">
-          <h2 class="project__title">Question me</h2>
-          <p class="project__text">
-            {{ $t("Projects.text-questionme") }}
-          </p>
-        </div>
-        <div class="buttons">
-          <a
-            href="https://questionme.netlify.app/"
-            target="_blank"
-            class="button button--primary"
-            @click="this.$emit('audioFocus')"
-            >Demo</a
-          >
-          <a
-            href="https://github.com/geminway92/questionme"
-            class="button button--primary-ghost"
-            target="_blank"
-            @click="this.$emit('audioFocus')"
-            >Code</a
-          >
-        </div>
-      </div>
-    </div>
-
-    <div class="projects">
-      <img
-        src="../assets/images/photo-projects-blacklist.jpg"
-        alt="Pokemon Page project"
-        class="project_image project_image--journal"
-      />
-      <div class="project_info">
-        <div class="project_tags ">
-          <span class="project_tag">#HTML</span>
-          <span class="project_tag">#CSS</span>
-          <span class="project_tag">#JS</span>
-        </div>
-        <div class="project-description-container">
-          <h2 class="project__title">Blacklist</h2>
-          <p class="project__text">
-            {{ $t("Projects.text-blacklist") }}
-          </p>
-        </div>
-        <div class="buttons">
-          <a
-            href="https://blacklist-js.netlify.app/"
-            target="_blank"
-            class="button button--primary"
-            @click="this.$emit('audioFocus')"
-            >Demo</a
-          >
-          <a
-            href="https://github.com/geminway92/blackjack"
-            class="button button--primary-ghost"
-            target="_blank"
-            @click="this.$emit('audioFocus')"
-            >Code</a
-          >
-        </div>
-      </div>
-    </div>
   </div>
 
 </template>
 
 <script>
 export default {
-  props: {
-    totalProjects: {
-      type: Number,
-      default: 1,
-    },
+  data(){
+    return{
+      projects: []
+    }
   },
 
-  mounted() {
-    this.$emit("counterProjects");
+  methods:{
+    getDateJson(){
+      fetch("data/CVGema.json")
+        .then(resp => resp.json())
+        .then(data => {
+          this.projects = data[0].projects
+        })
+    },
+    getImage(photo){
+      return require(`@/assets/images/${photo}`)
+    }
   },
+
+  created(){
+    this.getDateJson()
+  }
 };
 </script>
 
@@ -502,4 +213,5 @@ export default {
     margin-left: 35%;
   }
 }
+
 </style>

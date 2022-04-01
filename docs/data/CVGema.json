@@ -1,0 +1,137 @@
+[
+  {
+    "name": "Gema Martín",
+    "descripcion": "Apasionada de la programación, responsable, con facilidad para trabajar en equipo y con ganas de aprendizaje constante.",
+    "projects": [
+      {
+        "name": "Todo",
+        "image": "photo-projects-todo.png",
+        "descriptions": "Projects.text-todo",
+        "tags": [
+          "#HTML", "#CSS", "#JS", "#VueJS", "#Responsive"
+        ],
+        "links": [
+          {
+            "demo": "https://todo-vue-gemartin.netlify.app/",
+            "code": "https://github.com/geminway92/todo-vue"
+          }
+        ]
+      },
+      {
+        "name": "Cultura y Ocio",
+        "image": "photo-projects-cultura-y-ocio.png",
+        "descriptions": "Projects.text-culturayocio",
+        "tags": [
+          "#HTML", "#CSS", "#JS", "#VueJS", "#Responsive"
+        ],
+        "links": [
+          {
+            "demo": "https://cultura-y-ocio.netlify.app/#/",
+            "code": "https://github.com/geminway92/cultura-y-ocio-malaga"
+          }
+        ]
+      },
+      {
+        "name": "Time Dashboard",
+        "image": "photo-projects-timedashboard.jpg",
+        "descriptions": "Projects.text-timedashboard",
+        "tags": [
+          "#HTML", "#CSS", "#VueJS"
+        ],
+        "links": [
+          {
+            "demo": "https://time-dashboard-vue.netlify.app/",
+            "code": "https://github.com/geminway92/time-tracking-dashboard"
+          }
+        ]
+      },
+      {
+        "name": "Pokemon Page",
+        "image": "photo-projects-pokemon.jpg",
+        "descriptions": "Projects.text-pokemonPage",
+        "tags": [
+          "#HTML", "#CSS", "#JS", "#VueJS", "#Responsive"
+        ],
+        "links": [
+          {
+            "demo": "https://gameboy-pokemon.netlify.app/",
+            "code": "https://github.com/geminway92/gamepokemon2"
+          }
+        ]
+      },
+      {
+        "name": "Journal",
+        "image": "photo-projects-journal.jpg",
+        "descriptions": "Projects.text-journal",
+        "tags": [
+          "#HTML", "#CSS", "#JS", "#VueJS", "#Responsive"
+        ],
+        "links": [
+          {
+            "demo": "https://journal-vue.netlify.app/",
+            "code": "https://github.com/geminway92/vue-journal-vuex"
+          }
+        ]
+      },
+      {
+        "name": "Pokeball",
+        "image": "photo-projects-pokeball.png",
+        "descriptions": "Projects.text-pokeball",
+        "tags": [
+          "#HTML", "#CSS"
+        ],
+        "links": [
+          {
+            "demo": "https://codepen.io/geminway92/pen/porGdpq/",
+            "code": "https://github.com/geminway92/pokeball"
+          }
+        ]
+      },
+      {
+        "name": "Gameboy-EOI",
+        "image": "photo-projects-gameboy-eoi.png",
+        "descriptions": "Projects.text-gameboy-eoi",
+        "tags": [
+          "#HTML", "#CSS"
+        ],
+        "links": [
+          {
+            "demo": "https://codepen.io/geminway92/pen/LYzLOQp",
+            "code": "https://github.com/geminway92/gameboy-anec"
+          }
+        ]
+      },
+      {
+        "name": "Question me",
+        "image": "photo-projects-questionme.jpg",
+        "descriptions": "Projects.text-questionme",
+        "tags": [
+          "#HTML", "#CSS", "#JS", "#VueJS"
+        ],
+        "links": [
+          {
+            "demo": "https://questionme.netlify.app/",
+            "code": "https://github.com/geminway92/questionme"
+          }
+        ]
+      },
+      {
+        "name": "Blacklist",
+        "image": "photo-projects-blacklist.jpg",
+        "descriptions": "Projects.text-blacklist",
+        "tags": [
+          "#HTML", "#CSS", "#JS"
+        ],
+        "links": [
+          {
+            "demo": "https://blacklist-js.netlify.app/",
+            "code": "https://github.com/geminway92/blackjack"
+          }
+        ]
+      }
+
+
+    ]
+
+  }
+]

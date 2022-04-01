@@ -53,7 +53,7 @@ export default {
 }
 .skills_bar, .skills_level {
     position: relative;
-    width: 175px;
+    width: 150px;
     height: 8px;
     background-color: #888;
     border-radius: var(--border-radius);
