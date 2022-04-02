@@ -1,7 +1,7 @@
 <template>
     <div class="card-profile">
         <div class="card-profile-image-container">
-            <img src="../assets/images/photo-portafolio.jpg" alt="profile" class="card-profile-image">
+            <img src="../assets/images/perfil-dark.png" alt="profile" class="card-profile-image">
         </div>
             <h2 class="title">Gema Martín</h2>
         <p class="subtitle"> Frontend developer</p>
@@ -51,16 +51,14 @@ a{
     }
 
     .card-profile-image-container {
-        height: min-content;
-        margin: auto;
-        border-radius: inherit;
-        overflow: hidden;
-        background-color: var(--bg-color);
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
     }
 
     .card-profile-image {
-        width: 70%;
-        margin-left: 15%;
+        width: 100%;
+
     }
 
     .title {
@@ -83,8 +81,7 @@ a{
 
 
     .card-profile-image-container {
-        height: 225px;
-        width: 250px;
+        width: 100%;
     }
 
 }
