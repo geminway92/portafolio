@@ -30,6 +30,7 @@
     "text-todo": "App based on the design of a Kiran Kumar figma, except for some changes or additions I have made. It is fully functional: registrations, login, reset password, change profile picture, add new tasks.",
     "text-pokeball": "This is a simple project that puts css skills into practice. It's a pokeball with an infinite transition..",
     "text-gameboy-eoi": "Simple project developed in the EOI course where we create a css copy from an image",
-    "text-culturayocio": "Project that aims to create and see the events that take place in Malaga. It is thinking to put into practice request with axios, use the CRUD hosted the database in firebase and user authentication. A calendar was added and it is functional whether you are a registered user or you enter as anonymous, in the latter case it will be saved in localstorage."
+    "text-culturayocio": "Project that aims to create and see the events that take place in Malaga. It is thinking to put into practice request with axios, use the CRUD hosted the database in firebase and user authentication. A calendar was added and it is functional whether you are a registered user or you enter as anonymous, in the latter case it will be saved in localstorage.",
+    "text-taperia": "App of a fictitious taperia in the center of Malaga. This includes a form to contact the company as well as a section to reserve an outdoor and indoor table. The reservation view does not use any library. The data is hosted in firebase."
   }
 }
