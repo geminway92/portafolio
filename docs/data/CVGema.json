@@ -4,6 +4,20 @@
     "descripcion": "Apasionada de la programación, responsable, con facilidad para trabajar en equipo y con ganas de aprendizaje constante.",
     "projects": [
       {
+        "name": "Taperia La Rondeña",
+        "image": "photo-projects-taperia.png",
+        "descriptions": "Projects.text-taperia",
+        "tags": [
+          "#HTML", "#CSS", "#JS", "#VueJS", "#Responsive"
+        ],
+        "links": [
+          {
+            "demo": "https://larondenia.netlify.app/",
+            "code": "https://github.com/geminway92/taperia-rondenia"
+          }
+        ]
+      },
+      {
         "name": "Todo",
         "image": "photo-projects-todo.png",
         "descriptions": "Projects.text-todo",
