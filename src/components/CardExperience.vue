@@ -1,48 +1,8 @@
 <template>
-  <div class="card card--experience">
+  <div v-if="false" class="card card--experience">
           <h2 class="card__title">Experiences</h2>
-          <div class="experience">
-            <img
-              src="../assets/images/photo-experiences-academiajalon.png"
-              alt="logo"
-              class="experience_image"
-            />
-            <div class="experience__info">
-              <p
-                class="experience__time"
-              >
-                {{ $t('CardExperience.date-jalon')}}
-              </p>
-              <h3
-                class="experience__job"
-              >
-              {{ $t('CardExperience.job-jalon')}}
-
-              </h3>
-
-            </div>
-          </div>
-          <div class="experience">
-            <img
-              src="../assets/images/photo-experiences-lacampana.png"
-              alt="logo"
-              class="experience_image"
-            />
-            <div class="experience__info">
-              <p
-                class="experience__time"
-              >
-                {{ $t('CardExperience.date-campana')}}
-              </p>
-              <h3
-                class="experience__job"
-              >
-                {{ $t('CardExperience.job-campana')}}
-              </h3>
-
-            </div>
-          </div>
-          <div class="experience">
+          
+            <div class="experience">
             <img
               src="../assets/images/photo-experiences-txoco.png"
               alt="logo"
@@ -62,7 +22,7 @@
 
             </div>
           </div>
-        </div>
+    </div>
 </template>
 
 <script>
