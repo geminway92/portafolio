@@ -46,6 +46,20 @@
         ]
       },
       {
+        "name": "Pontefuerte",
+        "image": "photo-projects-pontefuerte.png",
+        "descriptions": "Projects.text-pontefuerte",
+        "tags": [
+          "#HTML", "#CSS", "#JS", "#VueJS", "#Responsive"
+        ],
+        "links": [
+          {
+            "demo": "https://pontefuerte.netlify.app/",
+            "code": "https://github.com/geminway92/pontefuerteapp"
+          }
+        ]
+      },
+      {
         "name": "Time Dashboard",
         "image": "photo-projects-timedashboard.jpg",
         "descriptions": "Projects.text-timedashboard",
@@ -56,20 +70,6 @@
           {
             "demo": "https://time-dashboard-vue.netlify.app/",
             "code": "https://github.com/geminway92/time-tracking-dashboard"
-          }
-        ]
-      },
-      {
-        "name": "Pokemon Page",
-        "image": "photo-projects-pokemon.jpg",
-        "descriptions": "Projects.text-pokemonPage",
-        "tags": [
-          "#HTML", "#CSS", "#JS", "#VueJS", "#Responsive"
-        ],
-        "links": [
-          {
-            "demo": "https://gameboy-pokemon.netlify.app/",
-            "code": "https://github.com/geminway92/gamepokemon2"
           }
         ]
       },
@@ -140,6 +140,20 @@
           {
             "demo": "https://blacklist-js.netlify.app/",
             "code": "https://github.com/geminway92/blackjack"
+          }
+        ]
+      },
+      {
+        "name": "Pokemon Page",
+        "image": "photo-projects-pokemon.jpg",
+        "descriptions": "Projects.text-pokemonPage",
+        "tags": [
+          "#HTML", "#CSS", "#JS", "#VueJS", "#Responsive"
+        ],
+        "links": [
+          {
+            "demo": "https://gameboy-pokemon.netlify.app/",
+            "code": "https://github.com/geminway92/gamepokemon2"
           }
         ]
       }
