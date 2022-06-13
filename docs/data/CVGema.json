@@ -4,6 +4,34 @@
     "descripcion": "Apasionada de la programación, responsable, con facilidad para trabajar en equipo y con ganas de aprendizaje constante.",
     "projects": [
       {
+        "name": "Yummy Tours",
+        "image": "photo-projects-yummytours.png",
+        "descriptions": "Projects.text-yummytours",
+        "tags": [
+          "#HTML", "#Sass","Bootstrap", "#JS", "#Svelte", "#Responsive"
+        ],
+        "links": [
+          {
+            "demo": "https://yummytours.netlify.app/",
+            "code": "https://github.com/geminway92/yummytours"
+          }
+        ]
+      },
+      {
+        "name": "A baja temperatura",
+        "image": "photo-projects-abajatemperatura.png",
+        "descriptions": "Projects.text-abajatemperatura",
+        "tags": [
+          "#HTML", "#Sass", "#JS", "#VueJS", "#Responsive"
+        ],
+        "links": [
+          {
+            "demo": "https://abajatemperatura.netlify.app/",
+            "code": "https://github.com/geminway92/a-baja-temperatura"
+          }
+        ]
+      },
+      {
         "name": "Taperia La Rondeña",
         "image": "photo-projects-taperia.png",
         "descriptions": "Projects.text-taperia",
