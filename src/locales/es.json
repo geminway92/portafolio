@@ -30,6 +30,7 @@
     "text-culturayocio": "Proyecto que tiene como finalidad crear y ver los eventos que hay en Málaga. Está pensando para poner en práctica petición con axios, usar la CRUD alojada la base de dato en firebase y la autenticación de usuario.Se añadió un calendario y es funcional tanto si eres usuario registrado o entras como anónimo, en este último caso estará guardado en localstorage.",
     "text-taperia": "App de una taperia ficticia en el centro de Málaga. Esta incluye formulario para contactar con la empresa así como un apartado para reservar mesa exterior y interior. La vista reserva no utiliza ninguna libreria. Los datos son alojados en firebase.",
     "text-pontefuerte": "App sencilla ecommerce de productos deportivos.",
-    "text-abajatemperatura": "App de un restaurante ficticio. Esta incluye apartado para reservar mesa. La reservas no utiliza ninguna libreria. Los datos son alojados en firebase."
+    "text-abajatemperatura": "App de un restaurante ficticio. Esta incluye apartado para reservar mesa. La reservas no utiliza ninguna libreria. Los datos son alojados en firebase.",
+    "text-yummytours": "App de reservas de rutas turísticas. Se ha simulado la reserva. Esta web es ficticia, pero se estudia que en un futuro pueda darle uso, añadiendo trabajadores en una base de datos y las rutas que ellos llevan."
   }
 }

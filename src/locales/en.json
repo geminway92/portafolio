@@ -33,6 +33,7 @@
     "text-culturayocio": "Project that aims to create and see the events that take place in Malaga. It is thinking to put into practice request with axios, use the CRUD hosted the database in firebase and user authentication. A calendar was added and it is functional whether you are a registered user or you enter as anonymous, in the latter case it will be saved in localstorage.",
     "text-taperia": "App of a fictitious taperia in the center of Malaga. This includes a form to contact the company as well as a section to reserve an outdoor and indoor table. The reservation view does not use any library. The data is hosted in firebase.",
     "text-pontefuerte": "Simple ecommerce app for sporting goods.",
-    "text-abajatemperatura": "App of a fictitious restaurant. It includes a section to reserve a table. The reservation does not use any library. The data is hosted in firebase."
+    "text-abajatemperatura": "App of a fictitious restaurant. It includes a section to reserve a table. The reservation does not use any library. The data is hosted in firebase.",
+    "text-yummytours": "Tourist route booking app. The reservation has been simulated. This web is fictitious, but it is being studied that in the future it can be used, adding workers in a database and the routes that they take."
   }
 }
